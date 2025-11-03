@@ -77,7 +77,7 @@ To run the GDPR Compliance Dashboard locally, follow these steps:
 ### Installation
 1.  **Clone the repository:**
     ```bash
-    git clone git@gitlab.computing.dcu.ie:ritvik.dubey2/2025-mcm-structured-metadata-extraction.git
+    git clone https://github.com/sfarhan28/2025-mcm-structured-metadata-extraction-master.git
     cd src
     ```
 2.  **Install the required dependencies:**
