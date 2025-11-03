@@ -1,0 +1,794 @@
+<html itemscope="" itemtype="https://schema.org/WebPage" lang="nl-NL" dir="ltr" data-mode="publish"><head><style id="tw-config">:root {
+  /* Misc */
+  --amidala: 1;
+  --page-width: 1300px;
+  --nav-width: 1400px;
+  --anim-time: 250ms;
+
+  /* Fonts */
+  --font-default: Arial, Roboto, Helvetica, sans-serif;
+  --font-custom: custom-font;
+  --font-scale: 1;
+
+  /* Logo */
+  --logo: url("data:image/svg+xml;utf-8,%3Csvg%20id%3D%22Shell_x5F_2012_x5F_PECTEN_x5F_RGB%22%20version%3D%221.1%22%20viewBox%3D%220%200%2024%2024%22%20xml%3Aspace%3D%22preserve%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3Crect%20x%3D%22-12.1%22%20y%3D%22-103.7%22%20width%3D%22141.7%22%20height%3D%22141.7%22%20fill%3D%22none%22%2F%3E%0A%20%20%20%20%3Cg%20transform%3D%22matrix(.22054%200%200%20.22054%20-.94555%20-.53756)%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22m54.6%2087.8h-18l-1.6-13.3-11-7.9c-0.5-2.3-0.7-4.7-0.7-7.1%200-19.6%2015.9-35.4%2035.4-35.4%2019.6%200%2035.4%2015.9%2035.4%2035.4%200%202.4-0.2%204.8-0.7%207.1l-10.9%207.9-1.7%2013.3h-18l-1%200.8c-0.9%200.7-2%201-3.1%201s-2.2-0.4-3.1-1z%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-miterlimit%3D%2240%22%20stroke-width%3D%227%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22m54.6%2087.8h-18l-1.6-13.3-11-7.9c-0.5-2.3-0.7-4.7-0.7-7.1%200-19.6%2015.9-35.4%2035.4-35.4%2019.6%200%2035.4%2015.9%2035.4%2035.4%200%202.4-0.2%204.8-0.7%207.1l-10.9%207.9-1.7%2013.3h-18l-1%200.8c-0.9%200.7-2%201-3.1%201s-2.2-0.4-3.1-1z%22%20fill%3D%22%23fbce07%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22m54.6%2087.8h-18l-1.6-13.3-11-7.9c-0.5-2.3-0.7-4.7-0.7-7.1%200-19.6%2015.9-35.4%2035.4-35.4s35.4%2015.9%2035.4%2035.4c0%202.4-0.2%204.8-0.7%207.1l-10.9%207.9-1.7%2013.3h-18l-1%200.8c-0.9%200.7-2%201-3.1%201s-2.2-0.4-3.1-1zm0.6-6.2h-13.1l-1.3-10.6-10.8-7.8c-0.3-1.2-0.5-2.5-0.5-3.8%200-2.1%200.4-4.2%201.3-6.1l19.1%2019.3-18.5-22.9c0.7-3%202.3-5.6%204.6-7.7l16.6%2028.7-14.7-31.3c1.9-2.5%204.6-4.4%207.6-5.3l10.2%2035.6-7.4-37.1c2.3-1.3%204.8-1.9%207.4-1.9%200.5%200%201.1%200%201.6%200.1l1.5%2038.5%201.5-38.5c0.5-0.1%201.1-0.1%201.6-0.1%202.6%200%205.1%200.7%207.4%201.9l-7.4%2037.1%2010.2-35.7c3%200.9%205.7%202.8%207.6%205.3l-14.8%2031.4%2016.6-28.7c2.3%202%203.9%204.7%204.6%207.7l-18.5%2022.9%2019.1-19.3c0.9%201.9%201.3%204%201.3%206.1%200%201.3-0.2%202.5-0.5%203.8l-10.8%207.8-1.3%2010.6h-13l-2%201.4c-0.5%200.4-1.1%200.5-1.7%200.5s-1.2-0.2-1.7-0.5z%22%20fill%3D%22%23dd1d21%22%20fill-rule%3D%22evenodd%22%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E");
+  --logo-ratio: 1;
+
+  /* Borders */
+  --radius-tl-scale: 1;
+  --radius-tr-scale: 1;
+  --radius-br-scale: 1;
+  --radius-bl-scale: 1;
+
+  /* Transparency */
+  --bg-alpha: 1;
+  --text-alpha: 1;
+  --border-alpha: 1;
+  --decoration-alpha: 1;
+  --outline-alpha: 1;
+
+  /* Reference colours (paper & ink == background & text) */
+  --color-paper1: 0, 0%, 100%;
+  --color-paper2: 0, 0%, 96%;
+  --color-ink1: 0, 0%, 29%;
+  --color-ink2: var(--color-ink1);
+
+  /* Theme colours */
+  --color-brand1-bg: 47, 100%, 50%;
+  --color-brand1-text: var(--color-ink1);
+  --color-brand2-bg: 359, 77%, 49%;
+  --color-brand2-text: var(--color-paper1);
+  --color-brand3-bg: 212, 49%, 39%;
+  --color-brand3-text: var(--color-paper1);
+  --color-brand4-bg: 159, 100%, 26%;
+  --color-brand4-text: var(--color-paper1);
+  --color-brand5-bg: 306, 61%, 33%;
+  --color-brand5-text: var(--color-paper1);
+  --color-system-bg: 210, 78%, 16%;
+  --color-system-text: 0, 0%, 100%;
+  --color-black-bg: 0, 0%, 0%;
+  --color-black-text: var(--color-paper1);
+
+  /* Set default colour to brand1 */
+  --color-bga: var(--color-paper1);
+  --color-txa: var(--color-ink1);
+  --color-bgb: var(--color-brand1-bg);
+  --color-txb: var(--color-brand1-text);
+  --color-txc: var(--color-ink2);
+}</style>
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+
+
+  
+  
+
+
+
+
+    
+<script src="/etc.clientlibs/amidala/clientlibs/app.min.ACSHASHc9bc867d139c14e2f8e1e87e91a39733.js" type="module"></script>
+
+
+
+
+
+  
+
+  
+  <meta charset="UTF-8">
+  
+  <meta name="mode" content="publish">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no user-scalable=yes">
+  <meta name="theme-color" content="#fff">
+  
+  
+  <link rel="apple-touch-icon" href="/etc.clientlibs/amidala/clientlibs/theme-base/resources/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/etc.clientlibs/amidala/clientlibs/theme-base/resources/favicon/manifest.json">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="og:type" content="website">
+
+  
+  
+    
+      <link rel="canonical" href="https://www.shell.nl/">
+      <meta property="og:url" content="https://www.shell.nl/">
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    <meta name="error-url" content="https://www.shell.nl/error.html">
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      <meta name="apple-mobile-web-app-title" content="Shell Nederland">
+      <meta name="application-name" content="Shell Nederland">
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    <meta name="home-url" content="https://www.shell.nl/">
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    <meta property="og:locale" content="nl_NL">
+    
+    
+  
+    
+    
+    
+      <meta itemprop="name" content="Shell Nederland">
+      <title>Shell Nederland</title>
+      <meta property="og:title" content="Shell Nederland">
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    <link rel="stylesheet" as="style" data-id="theme" href="/etc.clientlibs/amidala/clientlibs/theme-base.ACSHASHb291465fc8d3c7bcefde74d34044b698.css" onload="this.onload=null;this.rel='stylesheet'">
+  
+
+  
+  <meta name="description" content="Shell Nederland">
+  <meta itemprop="description" content="Shell Nederland">
+  <meta property="og:description" content="Shell Nederland">
+  
+    <meta property="og:image" content="https://www.shell.nl/_jcr_content/root/metadata.shellimg.png/1701963138104/shell-logo-svg.png">
+    
+  
+
+  
+  
+
+
+  
+  
+
+<meta name="external-disclaimer-text" content="Juridische Disclaimer Shell plc
+ 
+U verlaat nu de website van Shell in Nederland.
+ 
+De link die u hebt geselecteerd verwijst naar een website die niet is gecontroleerd door Shell plc of een lid van de Shell Group. De informatie en het materiaal op de gekoppelde website worden op geen enkele manier door Shell plc, noch enig ander lid van de Shell Group bevestigd, aangenomen, gecertificeerd of op enige andere manier gevalideerd. Hieronder vallen de sponsor van de website en eventueel beleid en eventuele activiteiten en diensten die op de website worden aangeboden, door enige adverteerder op de website of die aan de website is verbonden.
+ 
+Bedankt voor uw bezoek aan de website van Shell in Nederland."><link rel="icon" data-format="ico" href="/etc.clientlibs/amidala/clientlibs/theme-base/resources/favicon/favicon.ico"><link rel="icon" data-format="svg" href="/etc.clientlibs/amidala/clientlibs/theme-base/resources/favicon/favicon.svg"><img src="https://imp.control.kochava.com/track/impression?campaign_id=koshell-j21kzqaa2d213fb40aa81a&amp;network_id=13305&amp;site_id=1&amp;device_id=device_id" height="1" width="1" border="0"><script src="https://c.evidon.com/sitenotice/5498/shell/settingsV3.js" defer=""></script><script src="https://c.evidon.com/sitenotice/5498/translations/nl.js" defer=""></script></head>
+
+  <body class="body">
+    <div class="root backbone container image"><div data-key="0" data-name="Page" class="font-sans text-base bg-bga min-h-dvh text-txa "><a href="#main" data-name="SkipToMain" class="p-4 font-bold transition-all rounded-lg fixed start-6 bg-bgb text-txb -top-14 opacity-0 focus:top-6 focus:opacity-100 z-20">Overslaan en naar de inhoud gaan</a><div data-key="0/0" data-name="Container" class="grid lg:grid-cols-12 md:grid-cols-2 sm:grid-cols-1 "><div class="lg:col-span-12 md:col-span-2 sm:col-span-1 "></div><div class="lg:col-span-12 md:col-span-2 sm:col-span-1 "></div><div class="lg:col-span-12 md:col-span-2 sm:col-span-1 "><div data-key="0/0/2" data-name="Container" class="text-txa bg-bga"><header data-key="0/0/2" data-name="Container" class="grid lg:grid-cols-12 md:grid-cols-2 sm:grid-cols-1 "><div class="lg:col-span-12 md:col-span-2 sm:col-span-1 "><div data-key="0/0/2/0" data-name="Container" class="grid lg:grid-cols-12 md:grid-cols-2 sm:grid-cols-1 "><div class="lg:col-span-12 md:col-span-2 sm:col-span-1 "><div data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/header/inherited/topbar" data-name="Topbar" class="pal-brand1-subtle w-full bg-bga text-txa"><div class="m-auto max-w-page flex" role="list"><div class="flex"><div class="grow-0 text-sm" role="listitem"><div class="h-full transition border-bgb/100 border-t-4 px-1 pb-2 pt-1"><a title="Consument" aria-label="Consument" class="clickable cursor-pointer  h-full" href="https://www.shell.nl/"><div class="h-full transition hover:bg-txa/10 pe-2 py-1 flex space-x-2 items-center justify-center rounded overflow-hidden w-full min-h-8  ps-2 "><div class="grow"><span>Consument</span></div></div></a></div></div><div class="grow-0 text-sm" role="listitem"><div class="h-full transition border-bgb/0 border-t-4 px-1 pb-2 pt-1"><a title="Bedrijven" aria-label="Bedrijven" class="clickable cursor-pointer  h-full" href="https://www.shell.nl/bedrijven.html"><div class="h-full transition hover:bg-txa/10 pe-2 py-1 flex space-x-2 items-center justify-center rounded overflow-hidden w-full min-h-8  ps-2 "><div class="grow"><span>Bedrijven</span></div></div></a></div></div><div class="grow-0 text-sm" role="listitem"><div class="h-full transition border-bgb/0 border-t-4 px-1 pb-2 pt-1"><a title="Over ons" aria-label="Over ons" class="clickable cursor-pointer  h-full" href="https://www.shell.nl/over-ons.html"><div class="h-full transition hover:bg-txa/10 pe-2 py-1 flex space-x-2 items-center justify-center rounded overflow-hidden w-full min-h-8  ps-2 "><div class="grow"><span>Over ons</span></div></div></a></div></div></div></div></div></div><div class="lg:col-span-12 md:col-span-2 sm:col-span-1 "><div data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/header/inherited/navigation" data-name="Navigation" class="pal-inherited w-full relative border-txa/20 border-b text-txa bg-bga"><nav class="max-w-page m-auto"><div class="flex items-center"><a aria-label="shell.nl" class="clickable cursor-pointer  " href="https://www.shell.nl/"><div class="min-h-16 border-txa flex"><div class="flex shrink-0 grow-0"><div class="bg-no-repeat bg-center bg-contain h-16" style="background-image: var(--logo); width: calc(var(--logo-ratio) * 64px);"></div></div></div></a><div class="flex" role="list"><div class="shrink sm:hidden md:hidden tracking-tight relative" role="listitem"><div class="h-full transition border-bgb/100 border-b-4 px-1 pb-1 pt-2"><a aria-current="page" title="Home" aria-label="Home" class="clickable cursor-pointer  h-full" href="https://www.shell.nl/"><div class="h-full transition hover:bg-txa/10 pe-2 py-1 flex space-x-2 items-center justify-center rounded overflow-hidden w-full min-h-12  ps-2 "><div class="grow"><span>Home</span></div></div></a></div></div><div class="shrink sm:hidden md:hidden tracking-tight relative" role="listitem"><div class="h-full transition border-bgb/0 border-b-4 px-1 pb-1 pt-2"><a role="button" aria-expanded="false" aria-controls="_2" title="Shell GO+" aria-label="Shell GO+" class="clickable cursor-pointer  h-full" href="https://www.shell.nl/shell-go-plus.html"><div class="h-full transition hover:bg-txa/10 pe-2 py-1 flex space-x-2 items-center justify-center rounded overflow-hidden w-full min-h-12  ps-2 "><div class="grow"><span>Shell GO+</span></div><div class="flex items-center"><div aria-hidden="true" style="width: calc(var(--font-scale) * 12px); height: calc(var(--font-scale) * 12px);"><style>
+        #_45 path, #_45 polygon { fill: currentColor; }
+        #_45 {  }
+      </style><div class="h-full w-full" id="_45"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="block h-full w-full"><polygon fill="#595959" points="3.579 8.35 12.207 16.194 20.028 8.382 21.441 9.797 12.271 18.956 2.233 9.83"></polygon></svg></div></div></div></div></a></div><div id="_2" class="hidden"></div></div><div class="shrink sm:hidden md:hidden tracking-tight relative" role="listitem"><div class="h-full transition border-bgb/0 border-b-4 px-1 pb-1 pt-2"><a role="button" aria-expanded="false" aria-controls="_3" title="Shell-stations" aria-label="Shell-stations" class="clickable cursor-pointer  h-full" href="https://www.shell.nl/shell-stations.html"><div class="h-full transition hover:bg-txa/10 pe-2 py-1 flex space-x-2 items-center justify-center rounded overflow-hidden w-full min-h-12  ps-2 "><div class="grow"><span>Shell-stations</span></div><div class="flex items-center"><div aria-hidden="true" style="width: calc(var(--font-scale) * 12px); height: calc(var(--font-scale) * 12px);"><style>
+        #_46 path, #_46 polygon { fill: currentColor; }
+        #_46 {  }
+      </style><div class="h-full w-full" id="_46"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="block h-full w-full"><polygon fill="#595959" points="3.579 8.35 12.207 16.194 20.028 8.382 21.441 9.797 12.271 18.956 2.233 9.83"></polygon></svg></div></div></div></div></a></div><div id="_3" class="hidden"></div></div><div class="shrink sm:hidden md:hidden tracking-tight relative" role="listitem"><div class="h-full transition border-bgb/0 border-b-4 px-1 pb-1 pt-2"><a role="button" aria-expanded="false" aria-controls="_4" title="Elektrisch opladen" aria-label="Elektrisch opladen" class="clickable cursor-pointer  h-full" href="https://www.shell.nl/elektrisch-opladen.html"><div class="h-full transition hover:bg-txa/10 pe-2 py-1 flex space-x-2 items-center justify-center rounded overflow-hidden w-full min-h-12  ps-2 "><div class="grow"><span>Elektrisch opladen</span></div><div class="flex items-center"><div aria-hidden="true" style="width: calc(var(--font-scale) * 12px); height: calc(var(--font-scale) * 12px);"><style>
+        #_47 path, #_47 polygon { fill: currentColor; }
+        #_47 {  }
+      </style><div class="h-full w-full" id="_47"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="block h-full w-full"><polygon fill="#595959" points="3.579 8.35 12.207 16.194 20.028 8.382 21.441 9.797 12.271 18.956 2.233 9.83"></polygon></svg></div></div></div></div></a></div><div id="_4" class="hidden"></div></div><div class="shrink sm:hidden md:hidden tracking-tight relative" role="listitem"><div class="h-full transition border-bgb/0 border-b-4 px-1 pb-1 pt-2"><a role="button" aria-expanded="false" aria-controls="_5" title="Brandstof en motorolie" aria-label="Brandstof en motorolie" class="clickable cursor-pointer  h-full" href="https://www.shell.nl/brandstoffen-en-motorolien.html"><div class="h-full transition hover:bg-txa/10 pe-2 py-1 flex space-x-2 items-center justify-center rounded overflow-hidden w-full min-h-12  ps-2 "><div class="grow"><span>Brandstof en motorolie</span></div><div class="flex items-center"><div aria-hidden="true" style="width: calc(var(--font-scale) * 12px); height: calc(var(--font-scale) * 12px);"><style>
+        #_48 path, #_48 polygon { fill: currentColor; }
+        #_48 {  }
+      </style><div class="h-full w-full" id="_48"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="block h-full w-full"><polygon fill="#595959" points="3.579 8.35 12.207 16.194 20.028 8.382 21.441 9.797 12.271 18.956 2.233 9.83"></polygon></svg></div></div></div></div></a></div><div id="_5" class="hidden"></div></div></div><div class="grow"></div><div role="list" class="flex shrink"><div role="listitem"><div class="h-full transition border-bgb/0 p-2"><a title="Station locator" aria-label="Station locator" class="clickable cursor-pointer  h-full" href="https://www.shell.nl/shell-stations/stations-locator.html"><div class="h-full transition hover:bg-txa/10 pe-2 py-1 flex space-x-2 items-center justify-center rounded overflow-hidden min-h-12 min-w-12  ps-2 "><div class="flex items-center"><div aria-hidden="true" style="width: calc(var(--font-scale) * 24px); height: calc(var(--font-scale) * 24px);"><style>
+        #_64 path, #_64 polygon { fill: currentColor; }
+        #_64 {  }
+      </style><div class="h-full w-full" id="_64"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="block h-full w-full">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.7 5H6.3C5.62416 5 5 5.573 5 6.375V19H12V6.375C12 5.573 11.3758 5 10.7 5ZM6.3 3C4.47746 3 3 4.51104 3 6.375V20.4375C3 20.7482 3.24624 21 3.55 21H13.45C13.7538 21 14 20.7482 14 20.4375V13.5H15.5V18.5C15.5 19.88 16.62 21 18 21C19.38 21 20.5 19.88 20.5 18.5V9C20.5 8.31 20.22 7.68 19.77 7.23L19.78 7.22L16.06 3.5L15 4.56L17.11 6.67C16.17 7.03 15.5 7.93 15.5 9C15.5 10.38 16.62 11.5 18 11.5C18.36 11.5 18.69 11.42 19 11.29V18.5C19 19.05 18.55 19.5 18 19.5C17.45 19.5 17 19.05 17 18.5V14C17 12.9 16.1 12 15 12H14V6.375C14 4.51104 12.5225 3 10.7 3H6.3ZM18 10C17.45 10 17 9.55 17 9C17 8.45 17.45 8 18 8C18.55 8 19 8.45 19 9C19 9.55 18.55 10 18 10ZM8.49219 16C9.59676 16 10.4922 15.0405 10.4922 13.8569C10.4922 12.3545 9.0769 9.84105 8.62745 9.08074C8.5638 8.97309 8.42057 8.97308 8.35693 9.08074C7.90748 9.84105 6.49219 12.3545 6.49219 13.8569C6.49219 15.0405 7.38762 16 8.49219 16Z" fill="#343434"></path>
+</svg></div></div></div></div></a></div></div><div role="listitem"><div class="h-full transition border-bgb/0 p-2"><a title="EV charge points" aria-label="EV charge points" class="clickable cursor-pointer  h-full" href="https://www.shell.nl/elektrisch-opladen/vind-een-oplaadpaal.html"><div class="h-full transition hover:bg-txa/10 pe-2 py-1 flex space-x-2 items-center justify-center rounded overflow-hidden min-h-12 min-w-12  ps-2 "><div class="flex items-center"><div aria-hidden="true" style="width: calc(var(--font-scale) * 24px); height: calc(var(--font-scale) * 24px);"><style>
+        #_65 path, #_65 polygon { fill: currentColor; }
+        #_65 {  }
+      </style><div class="h-full w-full" id="_65"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="block h-full w-full">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3.02148 6.375C3.02148 4.51104 4.49894 3 6.32148 3H10.7215C12.544 3 14.0215 4.51104 14.0215 6.375V11.8651H15.0001C16.1001 11.8651 17.0001 12.7651 17.0001 13.8651V18.3651C17.0001 18.9151 17.4501 19.3651 18.0001 19.3651C18.5501 19.3651 19.0001 18.9151 19.0001 18.3651V9.45298C19.0001 9.41319 18.9843 9.37504 18.9562 9.34691L18.6587 9.04949C18.6307 9.02146 18.5927 9.00567 18.5531 9.00556L17.0222 9.00119C16.9826 9.00108 16.9446 8.98529 16.9166 8.95726L15.6663 7.70701C15.4306 7.47131 15.4306 6.99991 15.6663 6.76892L15.6409 6.73013C15.6207 6.69932 15.5971 6.67083 15.5707 6.64519L14.8319 5.92982C14.7734 5.87124 14.7734 5.77626 14.8319 5.71769L15.0912 5.45841C15.1498 5.39983 15.2448 5.39983 15.3034 5.45841L16.034 6.18909C16.0926 6.24767 16.1876 6.24767 16.2462 6.18909L16.9768 5.45841C17.0354 5.39983 17.0354 5.30486 16.9768 5.24628L16.2462 4.5156C16.1876 4.45702 16.1876 4.36205 16.2462 4.30347L16.5057 4.04393C16.5642 3.98546 16.6589 3.98534 16.7176 4.04367L17.4495 4.77198C17.5086 4.83072 17.6041 4.82831 17.6767 4.78759C17.9253 4.64831 18.2948 4.67864 18.4948 4.87859L19.7473 6.1311C19.7754 6.15918 19.7912 6.19725 19.7912 6.23695L19.7934 7.76521C19.7935 7.80492 19.8092 7.84299 19.8373 7.87107L20.3536 8.38735C20.4474 8.48112 20.5001 8.6083 20.5001 8.74091L20.5001 18.3651C20.5001 19.7451 19.3801 20.8651 18.0001 20.8651C16.6201 20.8651 15.5001 19.7451 15.5001 18.3651V13.5151C15.5001 13.4322 15.4329 13.3651 15.3501 13.3651H14.0215V20.4375C14.0215 20.7482 13.7752 21 13.4715 21H3.57148C3.26773 21 3.02148 20.7482 3.02148 20.4375V6.375ZM7.27368 9.26789C7.32548 9.10914 7.48829 9 7.67331 9H10.4455C10.7457 9 10.9472 9.27538 10.8268 9.52121L9.81501 11.5883H10.6045C10.9423 11.5883 11.1394 11.9291 10.9442 12.1755L8.03839 15.8421C7.79605 16.1479 7.25707 15.9778 7.28322 15.6038L7.42826 13.5296H6.43803C6.16051 13.5296 5.96069 13.2915 6.0384 13.0533L7.27368 9.26789Z" fill="#343434"></path>
+</svg></div></div></div></div></a></div></div><div role="listitem"><div class="h-full transition border-bgb/0 p-2"><a title="Help" aria-label="Help" class="clickable cursor-pointer  h-full" href="https://www.shell.nl/help-en-support.html"><div class="h-full transition hover:bg-txa/10 pe-2 py-1 flex space-x-2 items-center justify-center rounded overflow-hidden min-h-12 min-w-12  ps-2 "><div class="flex items-center"><div aria-hidden="true" style="width: calc(var(--font-scale) * 24px); height: calc(var(--font-scale) * 24px);"><style>
+        #_66 path, #_66 polygon { fill: currentColor; }
+        #_66 {  }
+      </style><div class="h-full w-full" id="_66"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="block h-full w-full">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12ZM22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM12 6C9.959 6 8.27622 7.52671 8.03079 9.50099C7.99673 9.77502 8.22386 10 8.5 10H9.5C9.77614 10 9.99363 9.77262 10.0624 9.50517C10.284 8.64245 11.0706 8 12 8C13.1 8 14 8.9 14 10C14 10.8792 13.4202 11.3236 12.7704 11.8217C12.0226 12.3949 11.1821 13.0392 11.0257 14.4992C10.9963 14.7737 11.2239 15 11.5 15H12.5C12.7761 15 12.9931 14.7724 13.053 14.5029C13.2309 13.7029 13.8292 13.18 14.4408 12.6455C15.21 11.9733 16 11.2829 16 10C16 7.79 14.21 6 12 6ZM11 17.5C11 17.7761 11.2239 18 11.5 18H12.5C12.7761 18 13 17.7761 13 17.5V16.5C13 16.2239 12.7761 16 12.5 16H11.5C11.2239 16 11 16.2239 11 16.5V17.5Z" fill="#404040"></path>
+</svg></div></div></div></div></a></div></div><div role="listitem"><div class="h-full transition border-bgb/0 p-2"><a title="Search" aria-label="Search" class="clickable cursor-pointer  h-full" href="https://www.shell.nl/search.html"><div class="h-full transition hover:bg-txa/10 pe-2 py-1 flex space-x-2 items-center justify-center rounded overflow-hidden min-h-12 min-w-12  ps-2 "><div class="flex items-center"><div aria-hidden="true" style="width: calc(var(--font-scale) * 24px); height: calc(var(--font-scale) * 24px);"><style>
+        #_67 path, #_67 polygon { fill: currentColor; }
+        #_67 {  }
+      </style><div class="h-full w-full" id="_67"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#404040" class="block h-full w-full"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 6a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm0-2a6.5 6.5 0 0 1 5.249 10.335l3.969 3.968a.5.5 0 0 1 0 .707l-.708.707a.5.5 0 0 1-.707 0l-3.968-3.968A6.5 6.5 0 1 1 10.5 4Z"></path></svg></div></div></div></div></a></div></div></div><div class="lg:hidden"><div class="h-full transition border-bgb/0 p-2"><a id="_0" aria-controls="_1" aria-expanded="false" aria-haspopup="true" title="Menu" aria-label="Menu" class="clickable cursor-pointer  h-full" href="#"><div class="h-full transition hover:bg-txa/10 pe-2 py-1 flex space-x-2 items-center justify-center rounded overflow-hidden min-h-12 min-w-12  ps-2 "><div class="flex items-center"><div aria-hidden="true" style="width: calc(var(--font-scale) * 24px); height: calc(var(--font-scale) * 24px);"><style>
+        #_49 path, #_49 polygon { fill: currentColor; }
+        #_49 {  }
+      </style><div class="h-full w-full" id="_49"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="block h-full w-full"><path fill="#595959" d="M22,16 L22,18 L2,18 L2,16 L22,16 Z M22,7 L22,9 L2,9 L2,7 L22,7 Z"></path></svg></div></div></div></div></a></div></div></div></nav></div></div></div></div><div class="lg:col-span-12 md:col-span-2 sm:col-span-1 "><div data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/header/breadcrumb" data-name="Breadcrumb" class="text-sm w-full px-6 py-2 min-h-9 m-auto max-w-page"></div></div><div class="lg:col-span-12 md:col-span-2 sm:col-span-1 "><div data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/header/inherited_905396314" data-name="Container" class="grid lg:grid-cols-12 md:grid-cols-2 sm:grid-cols-1 "></div></div></header></div></div><div class="lg:col-span-12 md:col-span-2 sm:col-span-1 "><main data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/main" data-name="Container" id="main" class="grid lg:grid-cols-12 md:grid-cols-2 sm:grid-cols-1 "><div class="lg:col-span-12 md:col-span-2 sm:col-span-1 "><style>
+      :first-child > #_6 > div {
+        padding-top: 0;
+      }
+    </style><div data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/main/section" data-name="Container" class="text-txa bg-bga grid grid-cols-1" id="_6"><div class="relative max-w-page m-auto w-full row-start-1 col-start-1 px-3 py-12 space-y-5"><section data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/main/section" data-name="Container" class="grid lg:grid-cols-12 md:grid-cols-2 sm:grid-cols-1 gap-5"><div class="lg:col-span-8 md:col-span-1 sm:col-span-1 lg:col-start-1 md:col-start-1"><div data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/main/section/item_copy_576747919_" data-name="PageHeaderBanner" class="pal-semitransparent relative h-full overflow-hidden lg:grid lg:grid-cols-12 bg-bga text-txa gap-x-5 rounded-2xl pal-semitransparent md:pal-brand1 sm:pal-brand1"><div class="row-start-1 col-start-1 col-span-12 lg:h-full"><div class="relative h-full w-full"><video id="_7" autoplay="" class="block h-full w-full object-cover" title="Onderweg met Shell" loop="" playsinline="true"><source src="/content/dam/shell/assets/nl/the-netherlands/b2c/campaigns/shell-go-plus/Shell%2020%2016x9.mov"></video><div class="absolute top-4 end-4"><button class="pal-transparent clickable cursor-pointer transition inline-flex text-txa bg-bga hover:text-bga hover:bg-txa rounded-lg justify-center items-center w-10 h-10  " aria-label="Pause playback" title="Pause playback"><div class="flex items-center justify-center h-full"><div aria-hidden="true" style="width: calc(var(--font-scale) * 24px); height: calc(var(--font-scale) * 24px);"><style>
+        #_38 path, #_38 polygon { fill: currentColor; }
+        #_38 {  }
+      </style><div class="h-full w-full" id="_38"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="block h-full w-full"><path d="M6.5 5C6.22386 5 6 5.19588 6 5.4375V18.5625C6 18.8041 6.22386 19 6.5 19H10.5C10.7761 19 11 18.8041 11 18.5625V5.4375C11 5.19588 10.7761 5 10.5 5H6.5Z" fill="#292929"></path><path d="M13.5 5C13.2239 5 13 5.19588 13 5.4375V18.5625C13 18.8041 13.2239 19 13.5 19H17.5C17.7761 19 18 18.8041 18 18.5625V5.4375C18 5.19588 17.7761 5 17.5 5H13.5Z" fill="#292929"></path></svg></div></div></div></button></div></div></div><div class="row-start-1 col-start-2 col-span-5 flex items-center lg:overflow-hidden"><div class="rounded-xl bg-bga text-txa relative"><div class="p-6 space-y-5 "><h1 class="font-custom font-bold text-txc text-4xl " id="onderweg-met-shell">Onderweg met Shell</h1><style>
+        #_8 :is(h1, h2, h3, h4, h5, h6):not(:first-child) { margin-top: 24px }
+        #_8 pre { background-color: hsla(var(--color-txa), 0.05) }
+        #_8 pre code { background: none; margin: 0; padding: 0; }
+        #_8 code { background-color: hsla(var(--color-txa), 0.05) }
+        #_8 details[open] > summary::after { rotate: 270deg }
+        #_8 details[open] > *:not(:last-child) { margin-bottom: 8px }
+        #_8 details > summary::after {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          content: '❯';
+          transition: var(--anim-time);
+          rotate: 90deg;
+          width: 12px;
+          font-weight: normal;
+          margin-right: 8px;
+        }
+      </style><div class="space-y-2" id="_8"><p>Gemakkelijk en snel op weg</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><div role="list" class="space-y-2"><div role="listitem"><a class="clickable cursor-pointer font-bold underline  space-x-2 inline-flex items-center" href="https://www.shell.nl/shell-stations/stations-locator.html"><span class="grow-0"><div aria-hidden="true" style="width: calc(var(--font-scale) * 16px); height: calc(var(--font-scale) * 16px);"><style>
+        #_62 path, #_62 polygon { fill: currentColor; }
+        #_62 {  }
+      </style><div class="h-full w-full" id="_62"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="block h-full w-full">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.7 5H6.3C5.62416 5 5 5.573 5 6.375V19H12V6.375C12 5.573 11.3758 5 10.7 5ZM6.3 3C4.47746 3 3 4.51104 3 6.375V20.4375C3 20.7482 3.24624 21 3.55 21H13.45C13.7538 21 14 20.7482 14 20.4375V13.5H15.5V18.5C15.5 19.88 16.62 21 18 21C19.38 21 20.5 19.88 20.5 18.5V9C20.5 8.31 20.22 7.68 19.77 7.23L19.78 7.22L16.06 3.5L15 4.56L17.11 6.67C16.17 7.03 15.5 7.93 15.5 9C15.5 10.38 16.62 11.5 18 11.5C18.36 11.5 18.69 11.42 19 11.29V18.5C19 19.05 18.55 19.5 18 19.5C17.45 19.5 17 19.05 17 18.5V14C17 12.9 16.1 12 15 12H14V6.375C14 4.51104 12.5225 3 10.7 3H6.3ZM18 10C17.45 10 17 9.55 17 9C17 8.45 17.45 8 18 8C18.55 8 19 8.45 19 9C19 9.55 18.55 10 18 10ZM8.49219 16C9.59676 16 10.4922 15.0405 10.4922 13.8569C10.4922 12.3545 9.0769 9.84105 8.62745 9.08074C8.5638 8.97309 8.42057 8.97308 8.35693 9.08074C7.90748 9.84105 6.49219 12.3545 6.49219 13.8569C6.49219 15.0405 7.38762 16 8.49219 16Z" fill="#F5F5F5"></path>
+</svg></div></div></span><span>Zoek een Shell-station</span></a></div><div role="listitem"><a class="clickable cursor-pointer font-bold underline  space-x-2 inline-flex items-center" href="https://www.shell.nl/elektrisch-opladen/vind-een-oplaadpaal.html"><span class="grow-0"><div aria-hidden="true" style="width: calc(var(--font-scale) * 16px); height: calc(var(--font-scale) * 16px);"><style>
+        #_63 path, #_63 polygon { fill: currentColor; }
+        #_63 {  }
+      </style><div class="h-full w-full" id="_63"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="block h-full w-full">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.91667 4.16667H5.25C4.6868 4.16667 4.16667 4.64417 4.16667 5.3125V15.8333H10V5.3125C10 4.64417 9.47986 4.16667 8.91667 4.16667ZM5.25 2.5C3.73122 2.5 2.5 3.7592 2.5 5.3125V17.0312C2.5 17.2901 2.7052 17.5 2.95833 17.5H11.2083C11.4615 17.5 11.6667 17.2901 11.6667 17.0312V11.1376H11.6667H12.7917C12.8608 11.1376 12.9167 11.1935 12.9167 11.2626V15.3042C12.9167 16.4542 13.8501 17.3876 15.0001 17.3876C16.1501 17.3876 17.0834 16.4542 17.0834 15.3042L17.0834 7.28409C17.0834 7.17358 17.0395 7.0676 16.9613 6.98946L16.5311 6.55922C16.5077 6.53582 16.4945 6.5041 16.4945 6.47101L16.4927 5.19746C16.4926 5.16437 16.4795 5.13265 16.4561 5.10925L15.4123 4.06549C15.2457 3.89887 14.9377 3.87359 14.7306 3.98966C14.6701 4.02359 14.5905 4.0256 14.5413 3.97665L13.9313 3.36972C13.8825 3.32112 13.8035 3.32122 13.7548 3.36994L13.5385 3.58623C13.4897 3.63504 13.4897 3.71419 13.5385 3.763L14.1474 4.3719C14.1962 4.42072 14.1962 4.49986 14.1474 4.54868L13.5385 5.15757C13.4897 5.20639 13.4105 5.20639 13.3617 5.15757L12.7528 4.54868C12.704 4.49986 12.6248 4.49986 12.576 4.54868L12.36 4.76474C12.3111 4.81355 12.3111 4.8927 12.36 4.94151L12.9755 5.53766C12.9976 5.55903 13.0172 5.58276 13.0341 5.60844L13.0553 5.64076C12.8589 5.83325 12.8589 6.22609 13.0553 6.42251L14.0972 7.46438C14.1205 7.48774 14.1522 7.5009 14.1852 7.501L15.4609 7.50463C15.4939 7.50472 15.5256 7.51789 15.5489 7.54124L15.7968 7.78909C15.8202 7.81253 15.8334 7.84433 15.8334 7.87748V15.3042C15.8334 15.7626 15.4584 16.1376 15.0001 16.1376C14.5417 16.1376 14.1667 15.7626 14.1667 15.3042V11.5542C14.1667 10.6376 13.4167 9.88756 12.5001 9.88756H11.6667H11.6667V5.3125C11.6667 3.7592 10.4355 2.5 8.91667 2.5H5.25ZM6.37652 7.5C6.22234 7.5 6.08666 7.59095 6.04349 7.72324L5.01409 10.8778C4.94934 11.0762 5.11585 11.2747 5.34712 11.2747H6.17231L6.05145 13.0032C6.02965 13.3148 6.4788 13.4565 6.68076 13.2017L9.10224 10.1462C9.26497 9.94089 9.10069 9.65695 8.81915 9.65695H8.16127L9.00446 7.93434C9.10473 7.72948 8.93681 7.5 8.68664 7.5H6.37652Z" fill="#292929"></path>
+</svg></div></div></span><span>Vind een laadpunt</span></a></div></div></div></div></div></div></div><div class="lg:col-span-4 md:col-span-1 sm:col-span-1 lg:col-start-9"><div data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/main/section/simple" data-name="Container" class="grid lg:grid-cols-4 md:grid-cols-1 sm:grid-cols-1 gap-5"><div class="lg:col-span-4 md:col-span-1 sm:col-span-1 "><style>#_32:hover { transform: translateY(-8px); box-shadow: 0 8px 12px 2px hsla(var(--color-black-bg), 0.2) }</style><a data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/main/section/simple/promo_1357427992_cop_615432009" data-name="PromoCard" class="pal-brand1-subtle clickable cursor-pointer  block bg-bga text-txa rounded-2xl overflow-hidden h-full cursor-pointer transition" title="Meer voordeel met Shell GO+" id="_32" href="https://www.shell.nl/shell-go-plus.html"><div class="bg-bga text-txa h-full rounded-2xl overflow-hidden flex flex-col"><div class="grow"><div class="flex flex-col h-full"><img class="cq-dd-image block object-cover w-full h-auto" src="https://www.shell.nl/_jcr_content/root/main/section/simple/promo_1357427992_cop_615432009.shellimg.png/1748962680604/tde-mailing-1e-edm-v3-16x9.png?imwidth=392&amp;impolicy=amidala-image&amp;imdensity=1.25" loading="eager" alt="Shell GO+ Voordeel" width="1920" height="1080"><div class="p-6 space-y-5 "><h3 class="font-custom font-bold text-txc text-2xl " id="meer-voordeel-met-shell-go-"><span>Meer voordeel met Shell GO+</span></h3><style>
+        #_10 :is(h1, h2, h3, h4, h5, h6):not(:first-child) { margin-top: 24px }
+        #_10 pre { background-color: hsla(var(--color-txa), 0.05) }
+        #_10 pre code { background: none; margin: 0; padding: 0; }
+        #_10 code { background-color: hsla(var(--color-txa), 0.05) }
+        #_10 details[open] > summary::after { rotate: 270deg }
+        #_10 details[open] > *:not(:last-child) { margin-bottom: 8px }
+        #_10 details > summary::after {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          content: '❯';
+          transition: var(--anim-time);
+          rotate: 90deg;
+          width: 12px;
+          font-weight: normal;
+          margin-right: 8px;
+        }
+      </style><div class="space-y-2" id="_10"><p>Maak van 4 juni 2025 tot en met 13 augustus 2025 kans om bij de race van het jaar te zijn!&nbsp;</p>
+</div></div></div></div><div class="flex items-center justify-end pl-6 pr-6 pb-6" aria-hidden="true"><div aria-hidden="true" style="width: calc(var(--font-scale) * 24px); height: calc(var(--font-scale) * 24px);"><style>
+        #_50 path, #_50 polygon { fill: currentColor; }
+        #_50 {  }
+      </style><div class="h-full w-full" id="_50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="block h-full w-full"><polygon fill="#595959" points="13.858 5.372 19.884 12 13.826 18.065 12.411 16.652 16.057 12.999 4 13 4 11 16.271 10.999 12.378 6.718"></polygon></svg></div></div></div></div></a></div><div class="lg:col-span-4 md:col-span-1 sm:col-span-1 "><div data-key="77791368" data-name="WebComponent" class="pal-brand1-solid w-full h-full"><script src="https://www.shell.nl/_jcr_content/root/main/section/simple/web_component_copy_c.stream/1750061737905/e9ade0c0a5593bb0149c660620e8e1a8f656f0ea/store-badges.js" type="module" crossorigin="anonymous" async=""></script><store-badges title="Download de Shell App" app-store-link="https://apps.apple.com/nl/app/shell-simpel-tanken-sparen/id1464649113" play-store-link="https://play.google.com/store/apps/details?id=com.shell.sitibv.retail&amp;hl=nl" class="w-full h-full"></store-badges></div></div></div></div></section></div></div></div><div class="lg:col-span-12 md:col-span-2 sm:col-span-1 "><style>
+      :first-child > #_11 > div {
+        padding-top: 0;
+      }
+    </style><div data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/main/section_2023384724" data-name="Container" class="pal-brand1-subtle text-txa bg-bga grid grid-cols-1" id="_11"><div class="relative max-w-page m-auto w-full row-start-1 col-start-1 px-3 py-12 space-y-5"><div class="p-6 space-y-5 "><h2 class="font-custom font-bold text-txc text-3xl text-center" id="producten-en-services-voor-onderweg">Producten en services voor onderweg</h2></div><section data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/main/section_2023384724" data-name="Container" class="pal-brand1-subtle grid lg:grid-cols-12 md:grid-cols-2 sm:grid-cols-1 gap-5"><div class="lg:col-span-12 md:col-span-2 sm:col-span-1 "><div data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/main/section_2023384724/tabs" data-name="Tabs" class="w-full relative" style="--actual-bg-color: transparent;"><div class="relative border-txa/20 border-b mb-5" style="--actual-bg-color: rgb(245, 245, 245);"><div class="absolute top-0 bottom-0 w-12 bg-bga items-center animate-fade hidden" style="left: 0px; justify-content: left; background: linear-gradient(90deg, var(--actual-bg-color) 33%, transparent);"><div aria-hidden="true" style="width: calc(var(--font-scale) * 12px); height: calc(var(--font-scale) * 12px);"><style>
+        #_55 path, #_55 polygon { fill: currentColor; }
+        #_55 {  }
+      </style><div class="h-full w-full" id="_55"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="block h-full w-full"><polygon fill="#595959" points="15.543 4.294 7.699 12.922 15.51 20.743 14.095 22.156 4.937 12.987 14.063 2.949"></polygon></svg></div></div></div><style>
+          #_54 { scrollbar-width: none; -ms-overflow-style: none }
+          #_54::-webkit-scrollbar { display: none }
+          .mobile #_54 { overflow-x: auto; overflow-y: hidden; flex-wrap: nowrap }
+          @media screen and (max-width: 600px) and (hover: none) {
+            #_54 { overflow-x: auto; overflow-y: hidden; flex-wrap: nowrap }
+          }
+        </style><div class="w-full flex flex-wrap px-6" role="tablist" aria-owns="_12 _13" id="_54"><div class="shrink-0"><div class="h-full transition border-bgb/100 border-b-4 px-1 pb-1 pt-2"><a id="_12" role="tab" aria-controls="_14" aria-selected="true" title="Voor onderweg" aria-label="Voor onderweg" class="clickable cursor-pointer  h-full" href="#tab-voor-onderweg"><div class="h-full transition hover:bg-txa/10 pe-2 py-1 flex space-x-2 items-center justify-center rounded overflow-hidden w-full min-h-12  ps-2 "><div class="grow"><span>Voor onderweg</span></div></div></a></div></div><div class="shrink-0"><div class="h-full transition border-bgb/0 border-b-4 px-1 pb-1 pt-2"><a id="_13" role="tab" aria-controls="_15" aria-selected="false" title="Op het station" aria-label="Op het station" class="clickable cursor-pointer  h-full" href="#tab-op-het-station"><div class="h-full transition hover:bg-txa/10 pe-2 py-1 flex space-x-2 items-center justify-center rounded overflow-hidden w-full min-h-12  ps-2 "><div class="grow"><span>Op het station</span></div></div></a></div></div></div><div class="absolute top-0 bottom-0 w-12 bg-bga items-center animate-fade hidden" style="right: 0px; justify-content: right; background: linear-gradient(-90deg, var(--actual-bg-color) 33%, transparent);"><div aria-hidden="true" style="width: calc(var(--font-scale) * 12px); height: calc(var(--font-scale) * 12px);"><style>
+        #_56 path, #_56 polygon { fill: currentColor; }
+        #_56 {  }
+      </style><div class="h-full w-full" id="_56"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="block h-full w-full"><polygon fill="#595959" points="7.374 4.324 15.219 12.952 7.407 20.773 8.822 22.187 17.981 13.017 8.854 2.979"></polygon></svg></div></div></div></div><div class="animate-fade" role="tabpanel" id="_14"><div data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/main/section_2023384724/tabs/tab" data-name="Container" class="grid lg:grid-cols-12 md:grid-cols-2 sm:grid-cols-1 gap-5"><div class="lg:col-span-6 md:col-span-1 sm:col-span-1 "><div data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/main/section_2023384724/tabs/tab/text_copy_copy" data-name="PromoSimple" class="pal-brand1 bg-bga text-txa h-full rounded-2xl overflow-hidden"><div class="p-6 space-y-5 "><style>
+        #_17 :is(h1, h2, h3, h4, h5, h6):not(:first-child) { margin-top: 24px }
+        #_17 pre { background-color: hsla(var(--color-txa), 0.05) }
+        #_17 pre code { background: none; margin: 0; padding: 0; }
+        #_17 code { background-color: hsla(var(--color-txa), 0.05) }
+        #_17 details[open] > summary::after { rotate: 270deg }
+        #_17 details[open] > *:not(:last-child) { margin-bottom: 8px }
+        #_17 details > summary::after {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          content: '❯';
+          transition: var(--anim-time);
+          rotate: 90deg;
+          width: 12px;
+          font-weight: normal;
+          margin-right: 8px;
+        }
+      </style><div class="space-y-2" id="_17"><h4 class="font-custom font-bold text-txc text-xl " id="">Zoek een Shell-station</h4>
+
+
+
+
+</div><a aria-label="Zoek een Shell-Station" title="Zoek een Shell-Station" class="clickable cursor-pointer  clickable cursor-pointer transition inline-flex overflow-hidden border bg-bgb/100 text-txb border-bgb hover:bg-txb hover:text-bgb font-bold rounded-lg pl-3 pr-3 space-x-2 h-12  " href="https://www.shell.nl/shell-stations/stations-locator.html"><div class="flex items-center justify-center h-full"><div aria-hidden="true" style="width: calc(var(--font-scale) * 24px); height: calc(var(--font-scale) * 24px);"><style>
+        #_68 path, #_68 polygon { fill: currentColor; }
+        #_68 {  }
+      </style><div class="h-full w-full" id="_68"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="block h-full w-full">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.7 5H6.3C5.62416 5 5 5.573 5 6.375V19H12V6.375C12 5.573 11.3758 5 10.7 5ZM6.3 3C4.47746 3 3 4.51104 3 6.375V20.4375C3 20.7482 3.24624 21 3.55 21H13.45C13.7538 21 14 20.7482 14 20.4375V13.5H15.5V18.5C15.5 19.88 16.62 21 18 21C19.38 21 20.5 19.88 20.5 18.5V9C20.5 8.31 20.22 7.68 19.77 7.23L19.78 7.22L16.06 3.5L15 4.56L17.11 6.67C16.17 7.03 15.5 7.93 15.5 9C15.5 10.38 16.62 11.5 18 11.5C18.36 11.5 18.69 11.42 19 11.29V18.5C19 19.05 18.55 19.5 18 19.5C17.45 19.5 17 19.05 17 18.5V14C17 12.9 16.1 12 15 12H14V6.375C14 4.51104 12.5225 3 10.7 3H6.3ZM18 10C17.45 10 17 9.55 17 9C17 8.45 17.45 8 18 8C18.55 8 19 8.45 19 9C19 9.55 18.55 10 18 10ZM8.49219 16C9.59676 16 10.4922 15.0405 10.4922 13.8569C10.4922 12.3545 9.0769 9.84105 8.62745 9.08074C8.5638 8.97309 8.42057 8.97308 8.35693 9.08074C7.90748 9.84105 6.49219 12.3545 6.49219 13.8569C6.49219 15.0405 7.38762 16 8.49219 16Z" fill="#F5F5F5"></path>
+</svg></div></div></div><div class="grow flex items-center h-full "><span>Zoek een Shell-Station</span></div></a></div></div></div><div class="lg:col-span-6 md:col-span-1 sm:col-span-1 "><div data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/main/section_2023384724/tabs/tab/text_copy" data-name="PromoSimple" class="pal-brand1 bg-bga text-txa h-full rounded-2xl overflow-hidden"><div class="p-6 space-y-5 "><style>
+        #_18 :is(h1, h2, h3, h4, h5, h6):not(:first-child) { margin-top: 24px }
+        #_18 pre { background-color: hsla(var(--color-txa), 0.05) }
+        #_18 pre code { background: none; margin: 0; padding: 0; }
+        #_18 code { background-color: hsla(var(--color-txa), 0.05) }
+        #_18 details[open] > summary::after { rotate: 270deg }
+        #_18 details[open] > *:not(:last-child) { margin-bottom: 8px }
+        #_18 details > summary::after {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          content: '❯';
+          transition: var(--anim-time);
+          rotate: 90deg;
+          width: 12px;
+          font-weight: normal;
+          margin-right: 8px;
+        }
+      </style><div class="space-y-2" id="_18"><h4 class="font-custom font-bold text-txc text-xl " id="">Vind een laadpaal</h4>
+
+
+
+
+
+
+</div><a aria-label="Vind een laadpaal" title="Vind een laadpaal" class="clickable cursor-pointer  clickable cursor-pointer transition inline-flex overflow-hidden border bg-bgb/100 text-txb border-bgb hover:bg-txb hover:text-bgb font-bold rounded-lg pl-3 pr-3 space-x-2 h-12  " href="https://www.shell.nl/elektrisch-opladen/vind-een-oplaadpaal.html"><div class="flex items-center justify-center h-full"><div aria-hidden="true" style="width: calc(var(--font-scale) * 24px); height: calc(var(--font-scale) * 24px);"><style>
+        #_69 path, #_69 polygon { fill: currentColor; }
+        #_69 {  }
+      </style><div class="h-full w-full" id="_69"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none" class="block h-full w-full">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.7 2H3.3C2.62416 2 2 2.573 2 3.375V16H9V3.375C9 2.573 8.37584 2 7.7 2ZM3.3 0C1.47746 0 0 1.51104 0 3.375V17.4375C0 17.7482 0.246244 18 0.55 18H10.45C10.7538 18 11 17.7482 11 17.4375V10.3651H11.0001H12.3501C12.4329 10.3651 12.5001 10.4322 12.5001 10.5151V15.3651C12.5001 16.7451 13.6201 17.8651 15.0001 17.8651C16.3801 17.8651 17.5001 16.7451 17.5001 15.3651L17.5001 5.74091C17.5001 5.6083 17.4474 5.48112 17.3536 5.38735L16.8373 4.87107C16.8092 4.84299 16.7935 4.80492 16.7934 4.76521L16.7912 3.23695C16.7912 3.19725 16.7754 3.15918 16.7473 3.1311L15.4948 1.87859C15.2948 1.67864 14.9253 1.64831 14.6767 1.78759C14.6041 1.82831 14.5086 1.83072 14.4495 1.77198L13.7176 1.04367C13.6589 0.98534 13.5642 0.985459 13.5057 1.04393L13.2462 1.30347C13.1876 1.36205 13.1876 1.45702 13.2462 1.5156L13.9768 2.24628C14.0354 2.30486 14.0354 2.39983 13.9768 2.45841L13.2462 3.18909C13.1876 3.24767 13.0926 3.24767 13.034 3.18909L12.3034 2.45841C12.2448 2.39983 12.1498 2.39983 12.0912 2.45841L11.8319 2.71769C11.7734 2.77626 11.7734 2.87124 11.8319 2.92982L12.5707 3.64519C12.5971 3.67083 12.6207 3.69932 12.6409 3.73013L12.6663 3.76892C12.4306 3.99991 12.4306 4.47131 12.6663 4.70701L13.9166 5.95726C13.9446 5.98529 13.9826 6.00108 14.0222 6.00119L15.5531 6.00556C15.5927 6.00567 15.6307 6.02146 15.6587 6.04949L15.9562 6.34691C15.9843 6.37504 16.0001 6.41319 16.0001 6.45298V15.3651C16.0001 15.9151 15.5501 16.3651 15.0001 16.3651C14.4501 16.3651 14.0001 15.9151 14.0001 15.3651V10.8651C14.0001 9.76508 13.1001 8.86507 12.0001 8.86507H11.0001H11V3.375C11 1.51104 9.52254 0 7.7 0H3.3ZM4.65182 6C4.46681 6 4.304 6.10914 4.25219 6.26789L3.01691 10.0533C2.93921 10.2915 3.13902 10.5296 3.41655 10.5296H4.40678L4.26174 12.6038C4.23558 12.9778 4.77457 13.1479 5.01691 12.8421L7.92268 9.17547C8.11796 8.92906 7.92083 8.58833 7.58299 8.58833H6.79352L7.80535 6.52121C7.92568 6.27538 7.72417 6 7.42397 6H4.65182Z" fill="white"></path>
+</svg></div></div></div><div class="grow flex items-center h-full "><span>Vind een laadpaal</span></div></a></div></div></div><div class="lg:col-span-4 md:col-span-1 sm:col-span-1 "><style>#_33:hover { transform: translateY(-8px); box-shadow: 0 8px 12px 2px hsla(var(--color-black-bg), 0.2) }</style><a data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/main/section_2023384724/tabs/tab/promo_copy_copy" data-name="PromoCard" class="pal-brand1 clickable cursor-pointer  block bg-bga text-txa rounded-2xl overflow-hidden h-full cursor-pointer transition" title="Elektrisch opladen" id="_33" href="https://www.shell.nl/elektrisch-opladen.html"><div class="bg-bga text-txa h-full rounded-2xl overflow-hidden flex flex-col"><div class="grow"><div class="flex flex-col h-full"><img class="cq-dd-image block object-cover w-full h-auto" src="https://www.shell.nl/_jcr_content/root/main/section_2023384724/tabs/tab/promo_copy_copy.shellimg.png/1727171606456/shell-recharge-connect-2.png?imwidth=48&amp;impolicy=amidala-thumb" loading="lazy" alt="Man using phone at a Shell Recharge Station" width="313" height="313"><div class="p-6 space-y-5 "><h3 class="font-custom font-bold text-txc text-2xl " id="elektrisch-opladen"><span>Elektrisch opladen</span></h3><style>
+        #_20 :is(h1, h2, h3, h4, h5, h6):not(:first-child) { margin-top: 24px }
+        #_20 pre { background-color: hsla(var(--color-txa), 0.05) }
+        #_20 pre code { background: none; margin: 0; padding: 0; }
+        #_20 code { background-color: hsla(var(--color-txa), 0.05) }
+        #_20 details[open] > summary::after { rotate: 270deg }
+        #_20 details[open] > *:not(:last-child) { margin-bottom: 8px }
+        #_20 details > summary::after {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          content: '❯';
+          transition: var(--anim-time);
+          rotate: 90deg;
+          width: 12px;
+          font-weight: normal;
+          margin-right: 8px;
+        }
+      </style><div class="space-y-2" id="_20"><p><b>Lees meer over Shell Recharge</b></p>
+
+
+
+
+</div></div></div></div><div class="flex items-center justify-end pl-6 pr-6 pb-6" aria-hidden="true"><div aria-hidden="true" style="width: calc(var(--font-scale) * 24px); height: calc(var(--font-scale) * 24px);"><style>
+        #_51 path, #_51 polygon { fill: currentColor; }
+        #_51 {  }
+      </style><div class="h-full w-full" id="_51"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="block h-full w-full"><polygon fill="#595959" points="13.858 5.372 19.884 12 13.826 18.065 12.411 16.652 16.057 12.999 4 13 4 11 16.271 10.999 12.378 6.718"></polygon></svg></div></div></div></div></a></div><div class="lg:col-span-4 md:col-span-1 sm:col-span-1 lg:col-start-5"><style>#_34:hover { transform: translateY(-8px); box-shadow: 0 8px 12px 2px hsla(var(--color-black-bg), 0.2) }</style><a data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/main/section_2023384724/tabs/tab/promo_copy_175072224" data-name="PromoCard" class="pal-brand1 clickable cursor-pointer  block bg-bga text-txa rounded-2xl overflow-hidden h-full cursor-pointer transition" title="Shell brandstoffen" id="_34" href="https://www.shell.nl/brandstoffen-en-motorolien/brandstoffen.html"><div class="bg-bga text-txa h-full rounded-2xl overflow-hidden flex flex-col"><div class="grow"><div class="flex flex-col h-full"><img class="cq-dd-image block object-cover w-full h-auto" src="https://www.shell.nl/_jcr_content/root/main/section_2023384724/tabs/tab/promo_copy_175072224.shellimg.png/1701946838269/tanken.png?imwidth=48&amp;impolicy=amidala-thumb" loading="lazy" alt="A red BWM M3 parked on a Shell Forecourt during dusk" width="313" height="313"><div class="p-6 space-y-5 "><h3 class="font-custom font-bold text-txc text-2xl " id="shell-brandstoffen"><span>Shell brandstoffen</span></h3><style>
+        #_22 :is(h1, h2, h3, h4, h5, h6):not(:first-child) { margin-top: 24px }
+        #_22 pre { background-color: hsla(var(--color-txa), 0.05) }
+        #_22 pre code { background: none; margin: 0; padding: 0; }
+        #_22 code { background-color: hsla(var(--color-txa), 0.05) }
+        #_22 details[open] > summary::after { rotate: 270deg }
+        #_22 details[open] > *:not(:last-child) { margin-bottom: 8px }
+        #_22 details > summary::after {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          content: '❯';
+          transition: var(--anim-time);
+          rotate: 90deg;
+          width: 12px;
+          font-weight: normal;
+          margin-right: 8px;
+        }
+      </style><div class="space-y-2" id="_22"><p><b>Lees meer over onze brandstoffen</b></p>
+</div></div></div></div><div class="flex items-center justify-end pl-6 pr-6 pb-6" aria-hidden="true"><div aria-hidden="true" style="width: calc(var(--font-scale) * 24px); height: calc(var(--font-scale) * 24px);"><style>
+        #_52 path, #_52 polygon { fill: currentColor; }
+        #_52 {  }
+      </style><div class="h-full w-full" id="_52"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="block h-full w-full"><polygon fill="#595959" points="13.858 5.372 19.884 12 13.826 18.065 12.411 16.652 16.057 12.999 4 13 4 11 16.271 10.999 12.378 6.718"></polygon></svg></div></div></div></div></a></div><div class="lg:col-span-4 md:col-span-1 sm:col-span-1 "><style>#_35:hover { transform: translateY(-8px); box-shadow: 0 8px 12px 2px hsla(var(--color-black-bg), 0.2) }</style><a data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/main/section_2023384724/tabs/tab/promo_copy" data-name="PromoCard" class="pal-brand1 clickable cursor-pointer  block bg-bga text-txa rounded-2xl overflow-hidden h-full cursor-pointer transition" title="Shell motoroliën en smeermiddelen" id="_35" href="https://www.shell.nl/brandstoffen-en-motorolien/shell-motorolien-en-smeermiddelen.html"><div class="bg-bga text-txa h-full rounded-2xl overflow-hidden flex flex-col"><div class="grow"><div class="flex flex-col h-full"><img class="cq-dd-image block object-cover w-full h-auto" src="https://www.shell.nl/_jcr_content/root/main/section_2023384724/tabs/tab/promo_copy.shellimg.png/1701335761754/oils.png?imwidth=48&amp;impolicy=amidala-thumb" loading="lazy" alt="Pouring of Shell Helix Ultra into an engine" width="313" height="313"><div class="p-6 space-y-5 "><h3 class="font-custom font-bold text-txc text-2xl " id="shell-motoroli-n-en-smeermiddelen"><span>Shell motoroliën en smeermiddelen</span></h3><style>
+        #_24 :is(h1, h2, h3, h4, h5, h6):not(:first-child) { margin-top: 24px }
+        #_24 pre { background-color: hsla(var(--color-txa), 0.05) }
+        #_24 pre code { background: none; margin: 0; padding: 0; }
+        #_24 code { background-color: hsla(var(--color-txa), 0.05) }
+        #_24 details[open] > summary::after { rotate: 270deg }
+        #_24 details[open] > *:not(:last-child) { margin-bottom: 8px }
+        #_24 details > summary::after {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          content: '❯';
+          transition: var(--anim-time);
+          rotate: 90deg;
+          width: 12px;
+          font-weight: normal;
+          margin-right: 8px;
+        }
+      </style><div class="space-y-2" id="_24"><p><strong>Vind de juiste olie voor je voertuig</strong></p>
+
+
+
+
+</div></div></div></div><div class="flex items-center justify-end pl-6 pr-6 pb-6" aria-hidden="true"><div aria-hidden="true" style="width: calc(var(--font-scale) * 24px); height: calc(var(--font-scale) * 24px);"><style>
+        #_53 path, #_53 polygon { fill: currentColor; }
+        #_53 {  }
+      </style><div class="h-full w-full" id="_53"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="block h-full w-full"><polygon fill="#595959" points="13.858 5.372 19.884 12 13.826 18.065 12.411 16.652 16.057 12.999 4 13 4 11 16.271 10.999 12.378 6.718"></polygon></svg></div></div></div></div></a></div></div></div><div class="hidden" role="tabpanel" id="_15"></div></div></div></section></div></div></div><div class="lg:col-span-12 md:col-span-2 sm:col-span-1 "><style>
+      :first-child > #_25 > div {
+        padding-top: 0;
+      }
+    </style><div data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/main/section_44126669_cop_1683384460" data-name="Container" class="pal-brand1 text-txa bg-bga grid grid-cols-1" id="_25"><div class="relative max-w-page m-auto w-full row-start-1 col-start-1 px-3 py-12 space-y-5"><div class="p-6 space-y-5 "><h2 class="font-custom font-bold text-txc text-3xl text-center" id="haal-meer-uit-je-bezoek-aan-shell-met-shell-go-">Haal meer uit je bezoek aan Shell met Shell GO+</h2></div><section data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/main/section_44126669_cop_1683384460" data-name="Container" class="pal-brand1 grid lg:grid-cols-12 md:grid-cols-2 sm:grid-cols-1 gap-5"><div class="lg:col-span-6 md:col-span-1 sm:col-span-1 "><div data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/main/section_44126669_cop_1683384460/simple_1483309255" data-name="Container" class="grid lg:grid-cols-6 md:grid-cols-1 sm:grid-cols-1 gap-5"><div class="lg:col-span-6 md:col-span-1 sm:col-span-1 "><div role="list" data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/main/section_44126669_cop_1683384460/simple_1483309255/list" data-name="Container" class="grid lg:grid-cols-6 md:grid-cols-1 sm:grid-cols-1 gap-5"><div class="lg:col-span-6 md:col-span-1 sm:col-span-1 " role="listitem"><div data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/main/section_44126669_cop_1683384460/simple_1483309255/list/list_item" data-name="ListItem" class="pal-inherited bg-bga text-txa rounded-2xl flex flex-row h-full"><div class="shrink-0 ps-6 py-6"><div class="bg-bgb text-txb w-16 h-16 flex items-center justify-center rounded-full"><div aria-hidden="true" style="width: calc(var(--font-scale) * 24px); height: calc(var(--font-scale) * 24px);"><style>
+        #_70 path, #_70 polygon { fill: currentColor; }
+        #_70 {  }
+      </style><div class="h-full w-full" id="_70"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="block h-full w-full">
+  <path fill="#595959" d="M10.7058255,3.00125633 L11,3 C14.7668652,3 17.8388005,3.61111503 17.993859,4.91965755 L17.998,5 L18,9.00604248 C18,9.17315925 17.9540872,9.32903273 17.8665208,9.47393639 C19.1159827,9.78928956 19.9166379,10.2679867 19.993859,10.9196576 L19.998,11 L20,15.0060425 C20,15.68723 19.2371711,16.1816133 17.9999612,16.5077122 L18,19.0060425 C18,20.3867544 14.8659932,21 11,21 C7.23313478,21 4.16119955,20.4177997 4.00614098,19.1107399 L4,19.0060425 L4,15 C4.01823035,14.3313634 4.77732832,13.8376174 5.9993795,13.5079959 L6,11 C6.00438174,10.8374378 6.0525679,10.6852138 6.14056229,10.543173 C4.88775591,10.2350242 4.08354222,9.76319046 4.00614098,9.11073995 L4,9.00604248 L4,5 C4.03581817,3.67114884 6.99869657,3.03310296 10.7058255,3.00125633 Z M5.99977942,17.3663018 L6,18.412 L6.06175374,18.4354417 C6.17588011,18.4772439 6.31088139,18.5200035 6.46504795,18.5618011 L6.62553961,18.603207 C7.66988225,18.859625 9.20481201,19 11,19 C12.8421551,19 14.4088617,18.8520872 15.4514295,18.583863 C15.6130743,18.5422762 15.7550892,18.4994476 15.8756685,18.4577496 L16,18.412 L16,17.623 L15.8321581,17.6666464 C15.0456792,17.8562099 14.2124494,17.9692611 13.3643089,17.994562 L13,18 C12.6318741,18 12.2654739,17.9833896 11.9034456,17.9510344 C11.6038221,17.96425 11.3031596,17.9702061 11.0018311,17.9702061 C9.25127809,17.9702061 7.58329255,17.7691594 5.99977942,17.3663018 Z M7.99938344,13.2814573 L8,14.412 L8.06175374,14.4354417 C8.17588011,14.4772439 8.31088139,14.5200035 8.46504795,14.5618011 L8.62553961,14.603207 C9.66988225,14.859625 11.204812,15 13,15 C14.8421551,15 16.4088617,14.8520872 17.4514295,14.583863 C17.6130743,14.5422762 17.7550892,14.4994476 17.8756685,14.4577496 L18,14.412 L18.0011061,13.3129793 C16.3577784,13.5703288 14.6922482,13.6991048 13.0058549,13.6991048 C11.2536731,13.6991048 9.58421257,13.5600653 7.99938344,13.2814573 Z M13,11 C11.1827477,11 9.62265118,11.151514 8.57669857,11.4239789 C8.41389096,11.4663894 8.27034077,11.5101121 8.14783107,11.5528863 L8,11.608 L7.9994475,11.8511409 C9.56447289,12.1624797 11.2323856,12.3185187 13.0058549,12.3185187 C14.6943287,12.3185187 16.3587427,12.1770505 18.0008702,11.8938462 L18,11.609 L17.9274579,11.5801548 C17.8131508,11.5374758 17.6781073,11.4938138 17.5240373,11.4510938 L17.3636884,11.4087591 C16.3167216,11.1455276 14.781413,11 13,11 Z M6.00017447,7.23160729 L6,8.412 L6.06175374,8.43544173 C6.17588011,8.4772439 6.31088139,8.52000347 6.46504795,8.56180109 L6.62553961,8.60320698 C7.66988225,8.85962505 9.20481201,9 11,9 C12.8421551,9 14.4088617,8.85208721 15.4514295,8.583863 C15.6130743,8.5422762 15.7550892,8.49944758 15.8756685,8.45774959 L16,8.412 L16.0008634,7.31840333 C14.4115628,7.55867774 12.8015756,7.67890624 11.1721101,7.67890624 C9.35883571,7.67890624 7.63415144,7.53000198 6.00017447,7.23160729 Z M11,5 C9.18274775,5 7.62265118,5.15151401 6.57669857,5.42397889 C6.41389096,5.46638937 6.27034077,5.51011213 6.14783107,5.55288628 L6,5.608 L6,5.796 L6.08029543,5.81377687 C7.67000899,6.13654564 9.36634125,6.29832011 11.1721101,6.29832011 C12.8033554,6.29832011 14.4121442,6.16627917 16.0000756,5.90195565 L16.0000756,5.609 L15.9274579,5.58015477 C15.8131508,5.53747579 15.6781073,5.49381384 15.5240373,5.45109385 L15.3636884,5.40875914 C14.3167216,5.14552758 12.781413,5 11,5 Z"></path>
+</svg></div></div></div></div><div class="p-6 space-y-5 "><h3 class="font-custom font-bold text-txc text-2xl " id="altijd-voordeel--speciaal-voor-jou">Altijd voordeel, speciaal voor jou</h3><style>
+        #_26 :is(h1, h2, h3, h4, h5, h6):not(:first-child) { margin-top: 24px }
+        #_26 pre { background-color: hsla(var(--color-txa), 0.05) }
+        #_26 pre code { background: none; margin: 0; padding: 0; }
+        #_26 code { background-color: hsla(var(--color-txa), 0.05) }
+        #_26 details[open] > summary::after { rotate: 270deg }
+        #_26 details[open] > *:not(:last-child) { margin-bottom: 8px }
+        #_26 details > summary::after {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          content: '❯';
+          transition: var(--anim-time);
+          rotate: 90deg;
+          width: 12px;
+          font-weight: normal;
+          margin-right: 8px;
+        }
+      </style><div class="space-y-2" id="_26"><p>Met Shell GO+ geniet je altijd van ledenvoordeel en krijg je ook aanbiedingen speciaal voor jou.</p>
+
+
+</div></div></div></div><div class="lg:col-span-6 md:col-span-1 sm:col-span-1 " role="listitem"><div data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/main/section_44126669_cop_1683384460/simple_1483309255/list/list_item_copy" data-name="ListItem" class="pal-inherited bg-bga text-txa rounded-2xl flex flex-row h-full"><div class="shrink-0 ps-6 py-6"><div class="bg-bgb text-txb w-16 h-16 flex items-center justify-center rounded-full"><div aria-hidden="true" style="width: calc(var(--font-scale) * 24px); height: calc(var(--font-scale) * 24px);"><style>
+        #_71 path, #_71 polygon { fill: currentColor; }
+        #_71 {  }
+      </style><div class="h-full w-full" id="_71"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#404040" class="block h-full w-full"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.497 5.104a.71.71 0 0 1 1.089-.487l1.98 1.379L10.56 6H8.098c-.383-.066-.661-.5-.6-.896Zm1.908-1.743 2.602 1.696 2.582-1.683A2.21 2.21 0 0 1 17.866 6H20a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1v9.004c0 .55-.448.996-1 .996H5c-.552 0-1-.446-1-.996V12a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h2.133a2.21 2.21 0 0 1 3.272-2.64ZM13 20.028l5-.02V12h-5v8.028ZM11 12v8.036l-5 .02V12h5Zm2.347-6h2.478c.394-.065.733-.488.672-.883a.71.71 0 0 0-1.088-.487L13.347 6ZM5 8v1.999h14V8H5Z"></path></svg></div></div></div></div><div class="p-6 space-y-5 "><h3 class="font-custom font-bold text-txc text-2xl " id="voordelig-shoppen-bij-partners">Voordelig shoppen bij partners</h3><style>
+        #_27 :is(h1, h2, h3, h4, h5, h6):not(:first-child) { margin-top: 24px }
+        #_27 pre { background-color: hsla(var(--color-txa), 0.05) }
+        #_27 pre code { background: none; margin: 0; padding: 0; }
+        #_27 code { background-color: hsla(var(--color-txa), 0.05) }
+        #_27 details[open] > summary::after { rotate: 270deg }
+        #_27 details[open] > *:not(:last-child) { margin-bottom: 8px }
+        #_27 details > summary::after {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          content: '❯';
+          transition: var(--anim-time);
+          rotate: 90deg;
+          width: 12px;
+          font-weight: normal;
+          margin-right: 8px;
+        }
+      </style><div class="space-y-2" id="_27"><p>Wissel je Air Miles in en shop voordelig bij onze partners, zoals bij Zalando of Apple. Of geef de voucher cadeau.</p>
+</div></div></div></div><div class="lg:col-span-6 md:col-span-1 sm:col-span-1 " role="listitem"><div data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/main/section_44126669_cop_1683384460/simple_1483309255/list/list_item_copy_1142975168" data-name="ListItem" class="pal-inherited bg-bga text-txa rounded-2xl flex flex-row h-full"><div class="shrink-0 ps-6 py-6"><div class="bg-bgb text-txb w-16 h-16 flex items-center justify-center rounded-full"><div aria-hidden="true" style="width: calc(var(--font-scale) * 24px); height: calc(var(--font-scale) * 24px);"><style>
+        #_72 path, #_72 polygon { fill: currentColor; }
+        #_72 {  }
+      </style><div class="h-full w-full" id="_72"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#404040" class="block h-full w-full"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.49 4.016a1.25 1.25 0 0 1 1.317-1.248l8.25.446a1.25 1.25 0 0 1 1.182 1.248v1.54A2 2 0 0 1 19 7.989v2a2 2 0 0 1-1.05 1.761l-1.135 8.928a1.5 1.5 0 0 1-1.488 1.311H8.641a1.5 1.5 0 0 1-1.49-1.321l-.532-4.45-.533-4.45A2 2 0 0 1 5 9.989v-2a2 2 0 0 1 1.49-1.934V4.016Zm1.5 1.972h7.75v-1.29L7.99 4.28v1.708Zm.137 6 .958 8h5.802l1.016-8H8.127ZM7 7.988h10v2H7v-2Z"></path></svg></div></div></div></div><div class="p-6 space-y-5 "><h3 class="font-custom font-bold text-txc text-2xl " id="shop-in-de-shell-shop">Shop in de Shell-shop</h3><style>
+        #_28 :is(h1, h2, h3, h4, h5, h6):not(:first-child) { margin-top: 24px }
+        #_28 pre { background-color: hsla(var(--color-txa), 0.05) }
+        #_28 pre code { background: none; margin: 0; padding: 0; }
+        #_28 code { background-color: hsla(var(--color-txa), 0.05) }
+        #_28 details[open] > summary::after { rotate: 270deg }
+        #_28 details[open] > *:not(:last-child) { margin-bottom: 8px }
+        #_28 details > summary::after {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          content: '❯';
+          transition: var(--anim-time);
+          rotate: 90deg;
+          width: 12px;
+          font-weight: normal;
+          margin-right: 8px;
+        }
+      </style><div class="space-y-2" id="_28"><p>Wissel je Air Miles in voor korting op alle producten in de Shell-shop. Betaal je volledig met Air Miles, dan hoef je niets bij te betalen. Dat is mooi meegenomen!</p>
+</div></div></div></div></div></div><div class="lg:col-span-6 md:col-span-1 sm:col-span-1 "><div data-key="3960623876" data-name="WebComponent" class="pal-brand1-subtle w-full h-full"><script src="https://www.shell.nl/_jcr_content/root/main/section_44126669_cop_1683384460/simple_1483309255/web_component_copy_c_1031681558.stream/1750061737905/e9ade0c0a5593bb0149c660620e8e1a8f656f0ea/store-badges.js" type="module" crossorigin="anonymous" async=""></script><store-badges title="Download de Shell App" app-store-link="https://apps.apple.com/nl/app/shell-simpel-tanken-sparen/id1464649113" play-store-link="https://play.google.com/store/apps/details?id=com.shell.sitibv.retail&amp;hl=nl" class="w-full h-full"></store-badges></div></div></div></div><div class="lg:col-span-6 md:col-span-1 sm:col-span-1 "><div data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/main/section_44126669_cop_1683384460/standalone_asset_cop" data-name="StandaloneAsset" class="space-y-2"><figure class="col-span-2 space-y-2"><div class="rounded-2xl overflow-hidden"><img class="cq-dd-image block object-cover w-full h-auto" src="https://www.shell.nl/_jcr_content/root/main/section_44126669_cop_1683384460/standalone_asset_cop.shellimg.png/1737467589016/beeld-onder-video-3840x3840.png?imwidth=48&amp;impolicy=amidala-thumb" loading="lazy" alt="Screenshot of the Shell App home screen" width="3840" height="3840"></div></figure></div></div><div class="lg:col-span-4 md:col-span-1 sm:col-span-1 "><div data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/main/section_44126669_cop_1683384460/text_copy_copy_39103" data-name="PromoSimple" class="pal-brand1-subtle bg-bga text-txa h-full rounded-2xl overflow-hidden"><div class="p-6 space-y-5 "><h3 class="font-custom font-bold text-txc text-2xl " id="je-carri-re-bij-shell">Je carrière bij Shell</h3><style>
+        #_29 :is(h1, h2, h3, h4, h5, h6):not(:first-child) { margin-top: 24px }
+        #_29 pre { background-color: hsla(var(--color-txa), 0.05) }
+        #_29 pre code { background: none; margin: 0; padding: 0; }
+        #_29 code { background-color: hsla(var(--color-txa), 0.05) }
+        #_29 details[open] > summary::after { rotate: 270deg }
+        #_29 details[open] > *:not(:last-child) { margin-bottom: 8px }
+        #_29 details > summary::after {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          content: '❯';
+          transition: var(--anim-time);
+          rotate: 90deg;
+          width: 12px;
+          font-weight: normal;
+          margin-right: 8px;
+        }
+      </style><div class="space-y-2" id="_29"><p><a class="clickable cursor-pointer underline " href="https://www.shell.nl/over-ons/carrieres.html"><span>Bekijk onze vacatures</span></a></p>
+</div></div></div></div><div class="lg:col-span-4 md:col-span-1 sm:col-span-1 "><div data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/main/section_44126669_cop_1683384460/text_copy_2146568852" data-name="PromoSimple" class="pal-brand1-subtle bg-bga text-txa h-full rounded-2xl overflow-hidden"><div class="p-6 space-y-5 "><h3 class="font-custom font-bold text-txc text-2xl " id="nieuws">Nieuws</h3><style>
+        #_30 :is(h1, h2, h3, h4, h5, h6):not(:first-child) { margin-top: 24px }
+        #_30 pre { background-color: hsla(var(--color-txa), 0.05) }
+        #_30 pre code { background: none; margin: 0; padding: 0; }
+        #_30 code { background-color: hsla(var(--color-txa), 0.05) }
+        #_30 details[open] > summary::after { rotate: 270deg }
+        #_30 details[open] > *:not(:last-child) { margin-bottom: 8px }
+        #_30 details > summary::after {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          content: '❯';
+          transition: var(--anim-time);
+          rotate: 90deg;
+          width: 12px;
+          font-weight: normal;
+          margin-right: 8px;
+        }
+      </style><div class="space-y-2" id="_30"><p><a class="clickable cursor-pointer underline " href="https://www.shell.nl/over-ons/nieuws.html"><span>Bekijk ons laatste nieuws</span></a></p>
+</div></div></div></div><div class="lg:col-span-4 md:col-span-1 sm:col-span-1 "><div data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/main/section_44126669_cop_1683384460/text_copy_1593670772" data-name="PromoSimple" class="pal-brand1-subtle bg-bga text-txa h-full rounded-2xl overflow-hidden"><div class="p-6 space-y-5 "><h3 class="font-custom font-bold text-txc text-2xl " id="over-ons-bij-shell-nederland">Over ons bij Shell Nederland</h3><style>
+        #_31 :is(h1, h2, h3, h4, h5, h6):not(:first-child) { margin-top: 24px }
+        #_31 pre { background-color: hsla(var(--color-txa), 0.05) }
+        #_31 pre code { background: none; margin: 0; padding: 0; }
+        #_31 code { background-color: hsla(var(--color-txa), 0.05) }
+        #_31 details[open] > summary::after { rotate: 270deg }
+        #_31 details[open] > *:not(:last-child) { margin-bottom: 8px }
+        #_31 details > summary::after {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          content: '❯';
+          transition: var(--anim-time);
+          rotate: 90deg;
+          width: 12px;
+          font-weight: normal;
+          margin-right: 8px;
+        }
+      </style><div class="space-y-2" id="_31"><p><a class="clickable cursor-pointer underline " href="https://www.shell.nl/over-ons.html"><span>Lees meer over Shell in Nederland</span></a></p>
+</div></div></div></div><div class="lg:col-span-12 md:col-span-2 sm:col-span-1 "><div data-key="1665239139" data-name="WebComponent" class="pal-brand1 w-full h-full"><script src="https://www.shell.nl/_jcr_content/root/main/section_44126669_cop_1683384460/web_component_copy_c.stream/1694429846647/515a589e806f03b065bccc17ca2b2e71569dcc99/kochava-tag.js" type="module" crossorigin="anonymous" async=""></script><kochava-tag src="https://imp.control.kochava.com/track/impression?campaign_id=koshell-j21kzqaa2d213fb40aa81a&amp;network_id=13305&amp;site_id=1&amp;device_id=device_id" class="w-full h-full web-component"></kochava-tag></div></div></section></div></div></div></main></div><div class="lg:col-span-12 md:col-span-2 sm:col-span-1 "><div data-key="0/0/4" data-name="Container" class="text-txa bg-bga border-txa/20 border-t pt-12 pb-12"><div class="max-w-page m-auto px-3"><footer data-key="0/0/4" data-name="Container" class="grid lg:grid-cols-12 md:grid-cols-2 sm:grid-cols-1 "><div class="lg:col-span-12 md:col-span-2 sm:col-span-1 "><div data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/footer/breadcrumb" data-name="Breadcrumb" class="text-sm w-full px-6 py-2 min-h-9 m-auto max-w-page"></div></div><div class="lg:col-span-12 md:col-span-2 sm:col-span-1 "><div data-key="0/0/4/1" data-name="Container" class="grid lg:grid-cols-12 md:grid-cols-2 sm:grid-cols-1 "><div class="lg:col-span-3 md:col-span-1 sm:col-span-1 "><div data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/footer/inherited/footeritem1" data-name="FooterItem" class="pal-brand1 p-6 space-y-5 text-sm"><h2 class="font-custom font-bold text-txc text-2xl " id="ga-voor-meer-naar-home">Ga voor meer naar Home</h2><div role="list" class="space-y-2"><div role="listitem"><a class="clickable cursor-pointer hover:underline " href="https://www.shell.nl/"><span>Consument</span></a></div><div role="listitem"><a class="clickable cursor-pointer hover:underline " href="https://www.shell.nl/bedrijven.html"><span>Bedrijven</span></a></div><div role="listitem"><a class="clickable cursor-pointer hover:underline " href="https://www.shell.nl/over-ons.html"><span>Over ons</span></a></div></div></div></div><div class="lg:col-span-3 md:col-span-1 sm:col-span-1 "><div data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/footer/inherited/footeritem2" data-name="FooterItem" class="pal-brand1 p-6 space-y-5 text-sm"><h2 class="font-custom font-bold text-txc text-2xl " id="meer-over-shell">Meer over Shell</h2><div role="list" class="space-y-2"><div role="listitem"><a class="clickable cursor-pointer hover:underline " href="https://www.shell.nl/over-ons/nieuws.html"><span>Nieuws</span></a></div><div role="listitem"><a class="clickable cursor-pointer hover:underline " href="https://www.shell.nl/over-ons/carrieres.html"><span>Je carrière bij Shell</span></a></div></div></div></div><div class="lg:col-span-3 md:col-span-1 sm:col-span-1 "><div data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/footer/inherited/footeritem3" data-name="FooterItem" class="pal-brand1 p-6 space-y-5 text-sm"><h2 class="font-custom font-bold text-txc text-2xl " id="kunnen-wij-u-helpen-">Kunnen wij u helpen?</h2><div role="list" class="space-y-2"><div role="listitem"><a class="clickable cursor-pointer hover:underline " href="https://www.shell.nl/shell-stations/stations-locator.html"><span>Zoek een Shell-station</span></a></div><div role="listitem"><a class="clickable cursor-pointer hover:underline " href="https://www.shell.nl/elektrisch-opladen.html"><span>Zoek een laadpunt</span></a></div><div role="listitem"><a class="clickable cursor-pointer hover:underline " href="https://www.shell.nl/shell-global-helpline.html"><span>Shell Global Helpline</span></a></div><div role="listitem"><a class="clickable cursor-pointer hover:underline " href="https://www.shell.nl/contact.html"><span>Contact</span></a></div><div role="listitem"><a class="clickable cursor-pointer hover:underline " target="_blank" href="https://support.shell.nl/hc/nl" rel="noopener"><span class="space-x-1"><span>Shell klantenservice</span><span class="inline-block align-top"><div aria-hidden="true" style="width: calc(var(--font-scale) * 16px); height: calc(var(--font-scale) * 16px);"><style>
+        #_39 path, #_39 polygon { fill: currentColor; }
+        #_39 {  }
+      </style><div class="h-full w-full" id="_39"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="block h-full w-full"><path fill="#595959" d="M19,6 L19,21 L2,21 L2,6 L19,6 Z M17,8 L4,8 L4,19 L17,19 L17,8 Z M22,3 L22,19 L20,19 L20,4.999 L4,5 L4,3 L22,3 Z"></path></svg></div></div></span></span></a></div></div></div></div><div class="lg:col-span-3 md:col-span-1 sm:col-span-1 "><div data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/footer/inherited/footeritem4" data-name="FooterItem" class="pal-brand1 p-6 space-y-5 text-sm"><h2 class="font-custom font-bold text-txc text-2xl " id="blijf-op-de-hoogte-van-shell">Blijf op de hoogte van Shell</h2><div role="list" class="space-y-2"><div role="listitem"><a class="clickable cursor-pointer hover:underline  space-x-2 inline-flex items-center" target="_blank" href="https://www.facebook.com/Shell" rel="noopener"><span class="grow-0"><div aria-hidden="true" style="width: calc(var(--font-scale) * 16px); height: calc(var(--font-scale) * 16px);"><style>
+        #_57 path, #_57 polygon { fill: currentColor; }
+        #_57 {  }
+      </style><div class="h-full w-full" id="_57"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#404040" class="block h-full w-full"><path d="M16.294 8.476H13.13V6.401c0-.78.518-.962.883-.962h2.23V2.012L13.164 2C9.753 2 8.976 4.556 8.976 6.192v2.284H7v3.531h1.976V22h4.153v-9.993h2.8l.365-3.53Z"></path></svg></div></div></span><span class="space-x-1"><span>Facebook</span><span class="inline-block align-top"><div aria-hidden="true" style="width: calc(var(--font-scale) * 16px); height: calc(var(--font-scale) * 16px);"><style>
+        #_40 path, #_40 polygon { fill: currentColor; }
+        #_40 {  }
+      </style><div class="h-full w-full" id="_40"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="block h-full w-full"><path fill="#595959" d="M19,6 L19,21 L2,21 L2,6 L19,6 Z M17,8 L4,8 L4,19 L17,19 L17,8 Z M22,3 L22,19 L20,19 L20,4.999 L4,5 L4,3 L22,3 Z"></path></svg></div></div></span></span></a></div><div role="listitem"><a class="clickable cursor-pointer hover:underline  space-x-2 inline-flex items-center" target="_blank" href="https://twitter.com/shell_nederland" rel="noopener"><span class="grow-0"><div aria-hidden="true" style="width: calc(var(--font-scale) * 16px); height: calc(var(--font-scale) * 16px);"><style>
+        #_58 path, #_58 polygon { fill: currentColor; }
+        #_58 {  }
+      </style><div class="h-full w-full" id="_58"><svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 24 24" class="block h-full w-full"><path d="M13.9,10.43l7.45-8.65H19.58L13.12,9.3,8,1.78H2L9.81,13.14,2,22.22H3.76l6.83-7.94L16,22.22h6L13.9,10.43Zm-2.41,2.81-.8-1.13-6.29-9H7.11l5.08,7.27L13,11.51,19.58,21H16.87l-5.38-7.71Z"></path></svg></div></div></span><span class="space-x-1"><span>X</span><span class="inline-block align-top"><div aria-hidden="true" style="width: calc(var(--font-scale) * 16px); height: calc(var(--font-scale) * 16px);"><style>
+        #_41 path, #_41 polygon { fill: currentColor; }
+        #_41 {  }
+      </style><div class="h-full w-full" id="_41"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="block h-full w-full"><path fill="#595959" d="M19,6 L19,21 L2,21 L2,6 L19,6 Z M17,8 L4,8 L4,19 L17,19 L17,8 Z M22,3 L22,19 L20,19 L20,4.999 L4,5 L4,3 L22,3 Z"></path></svg></div></div></span></span></a></div><div role="listitem"><a class="clickable cursor-pointer hover:underline  space-x-2 inline-flex items-center" target="_blank" href="https://www.linkedin.com/company/shell" rel="noopener"><span class="grow-0"><div aria-hidden="true" style="width: calc(var(--font-scale) * 16px); height: calc(var(--font-scale) * 16px);"><style>
+        #_59 path, #_59 polygon { fill: currentColor; }
+        #_59 {  }
+      </style><div class="h-full w-full" id="_59"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#404040" class="block h-full w-full"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.43 2C2.958 2 2 2.962 2 4.227c0 1.238.93 2.23 2.37 2.23h.03c1.494 0 2.424-.992 2.424-2.23C6.794 2.962 5.894 2 4.429 2ZM2.252 21.111H6.54V8.216H2.253V21.11Zm19.747 0v-7.394c0-3.961-2.112-5.804-4.935-5.804-2.277 0-3.294 1.253-3.865 2.13V8.216H8.912c.059 1.21 0 12.895 0 12.895H13.2V13.91c0-.386.03-.769.141-1.044.312-.771 1.018-1.569 2.2-1.569 1.553 0 2.17 1.183 2.17 2.916v6.9H22Zm-8.8-11.068v.042h-.03a.167.167 0 0 0 .03-.042Z"></path></svg></div></div></span><span class="space-x-1"><span>LinkedIn</span><span class="inline-block align-top"><div aria-hidden="true" style="width: calc(var(--font-scale) * 16px); height: calc(var(--font-scale) * 16px);"><style>
+        #_42 path, #_42 polygon { fill: currentColor; }
+        #_42 {  }
+      </style><div class="h-full w-full" id="_42"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="block h-full w-full"><path fill="#595959" d="M19,6 L19,21 L2,21 L2,6 L19,6 Z M17,8 L4,8 L4,19 L17,19 L17,8 Z M22,3 L22,19 L20,19 L20,4.999 L4,5 L4,3 L22,3 Z"></path></svg></div></div></span></span></a></div><div role="listitem"><a class="clickable cursor-pointer hover:underline  space-x-2 inline-flex items-center" target="_blank" href="https://www.youtube.com/user/Shell" rel="noopener"><span class="grow-0"><div aria-hidden="true" style="width: calc(var(--font-scale) * 16px); height: calc(var(--font-scale) * 16px);"><style>
+        #_60 path, #_60 polygon { fill: currentColor; }
+        #_60 {  }
+      </style><div class="h-full w-full" id="_60"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#404040" class="block h-full w-full"><path fill-rule="evenodd" clip-rule="evenodd" d="m8.34 18.742 4.103.075c.007 0 .02 0 .02.01 2.285.042 4.51-.092 6.79-.258 1.818-.127 2.249-1.447 2.474-3.02.28-1.9.343-3.822.196-5.735l-.02-.274c-.138-1.83-.292-3.887-2.455-4.267a9.599 9.599 0 0 0-1.397-.166c-4.42-.143-8.879-.18-13.308.127-1.313.085-2.161.862-2.377 2.164a28.44 28.44 0 0 0-.258 7.045l.008.086c.145 1.646.314 3.57 2.261 3.968 1.048.218 2.116.227 3.185.235.26.002.519.005.778.01Zm3.82-5.132c-.706.407-1.415.814-2.13 1.224V8.965l2.353 1.351 2.756 1.584-2.978 1.71Z"></path></svg></div></div></span><span class="space-x-1"><span>YouTube</span><span class="inline-block align-top"><div aria-hidden="true" style="width: calc(var(--font-scale) * 16px); height: calc(var(--font-scale) * 16px);"><style>
+        #_43 path, #_43 polygon { fill: currentColor; }
+        #_43 {  }
+      </style><div class="h-full w-full" id="_43"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="block h-full w-full"><path fill="#595959" d="M19,6 L19,21 L2,21 L2,6 L19,6 Z M17,8 L4,8 L4,19 L17,19 L17,8 Z M22,3 L22,19 L20,19 L20,4.999 L4,5 L4,3 L22,3 Z"></path></svg></div></div></span></span></a></div><div role="listitem"><a class="clickable cursor-pointer hover:underline  space-x-2 inline-flex items-center" target="_blank" href="https://instagram.com/shell_nederland" rel="noopener"><span class="grow-0"><div aria-hidden="true" style="width: calc(var(--font-scale) * 16px); height: calc(var(--font-scale) * 16px);"><style>
+        #_61 path, #_61 polygon { fill: currentColor; }
+        #_61 {  }
+      </style><div class="h-full w-full" id="_61"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#404040" class="block h-full w-full"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.45 2.525c.636-.247 1.363-.416 2.427-.464C8.945 2.01 9.285 2 12.001 2c2.716 0 3.057.012 4.123.06 1.064.048 1.791.218 2.428.465a4.904 4.904 0 0 1 1.77 1.154 4.916 4.916 0 0 1 1.154 1.77c.247.637.416 1.364.464 2.428C21.99 8.943 22 9.284 22 12s-.011 3.056-.06 4.123c-.047 1.064-.217 1.791-.464 2.427a4.909 4.909 0 0 1-1.154 1.771 4.918 4.918 0 0 1-1.771 1.154c-.636.247-1.363.416-2.428.464-1.066.05-1.406.061-4.123.061-2.715 0-3.055-.012-4.123-.06-1.064-.049-1.79-.218-2.427-.465a4.905 4.905 0 0 1-1.771-1.154 4.89 4.89 0 0 1-1.154-1.77c-.247-.637-.416-1.364-.464-2.428C2.01 15.056 2 14.716 2 12s.011-3.057.06-4.123c.049-1.064.218-1.791.465-2.427A4.893 4.893 0 0 1 3.68 3.679 4.907 4.907 0 0 1 5.45 2.525ZM7.96 20.14c-.975-.045-1.505-.207-1.857-.344a3.11 3.11 0 0 1-1.15-.748 3.091 3.091 0 0 1-.749-1.15c-.137-.352-.3-.882-.344-1.857-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.041.045-.975.208-1.504.344-1.857.182-.467.399-.8.748-1.15.35-.35.683-.568 1.15-.748.353-.138.883-.3 1.858-.345 1.054-.048 1.37-.058 4.04-.058s2.987.01 4.042.058c.975.045 1.504.208 1.857.345.467.18.8.398 1.15.748.35.35.566.683.748 1.15.137.352.3.882.344 1.857.049 1.055.058 1.37.058 4.041 0 2.67-.01 2.986-.058 4.041-.044.975-.207 1.505-.344 1.857-.182.467-.398.8-.748 1.15-.35.35-.683.566-1.15.748-.352.137-.882.3-1.857.344-1.054.048-1.371.058-4.042.058-2.67 0-2.986-.01-4.04-.058Zm9.38-12.278a1.2 1.2 0 1 1 0-2.401 1.2 1.2 0 0 1 0 2.4ZM6.864 12a5.135 5.135 0 1 0 10.27 0 5.135 5.135 0 0 0-10.27 0Zm1.802 0a3.333 3.333 0 1 1 6.667 0 3.333 3.333 0 0 1-6.667 0Z"></path></svg></div></div></span><span class="space-x-1"><span>Instagram</span><span class="inline-block align-top"><div aria-hidden="true" style="width: calc(var(--font-scale) * 16px); height: calc(var(--font-scale) * 16px);"><style>
+        #_44 path, #_44 polygon { fill: currentColor; }
+        #_44 {  }
+      </style><div class="h-full w-full" id="_44"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="block h-full w-full"><path fill="#595959" d="M19,6 L19,21 L2,21 L2,6 L19,6 Z M17,8 L4,8 L4,19 L17,19 L17,8 Z M22,3 L22,19 L20,19 L20,4.999 L4,5 L4,3 L22,3 Z"></path></svg></div></div></span></span></a></div></div></div></div><div class="lg:col-span-9 md:col-span-1 sm:col-span-1 "><div data-key="/content/shell/countries/netherland/nl_nl/jcr_content/root/footer/inherited/legalfooter" data-name="LegalFooter" class="pal-brand1 p-6 text-sm flex flex-wrap gap-5" role="list"><div role="listitem" class="flex items-center"><a class="clickable cursor-pointer hover:underline text-sm" href="https://www.shell.nl/toegankelijkheid.html"><span>Toegankelijkheid</span></a></div><div role="listitem" class="flex items-center"><a class="clickable cursor-pointer hover:underline text-sm" href="https://www.shell.nl/terms-and-conditions.html"><span>Terms and conditions</span></a></div><div role="listitem" class="flex items-center"><a class="clickable cursor-pointer hover:underline text-sm" href="https://www.shell.nl/privacyverklaringen.html"><span>Privacyverklaringen</span></a></div><div role="listitem" class="flex items-center"><a class="clickable cursor-pointer hover:underline text-sm" href="https://www.shell.nl/cookiebeleid.html"><span>Cookiebeleid</span></a></div><div role="listitem" class="flex items-center"><a class="clickable cursor-pointer hover:underline text-sm" href="https://www.shell.nl/waarschuwing-voor-fraude-en-vervalsing.html"><span>Waarschuwing voor fraude en vervalsing</span></a></div></div></div><div class="lg:col-span-3 md:col-span-1 sm:col-span-1 "><div data-key="3245410845" data-name="WebComponent" class="pal-brand1 w-full h-full"><script src="https://www.shell.nl/_jcr_content/root/footer/inherited/web_component.stream/1750061739331/8b2abf495663b37c515eeeffd62b85d84920f273/analytics-legacy.js" type="module" crossorigin="anonymous" async=""></script><analytics-legacy link-text="Cookievoorkeuren aanpassen" consent-id="100201" launch-url="https://assets.adobedtm.com/fdd3d8394b31/18134fbe5c0b/launch-c9469a243468.min.js" class="w-full h-full"></analytics-legacy></div></div><div class="lg:col-span-12 md:col-span-2 sm:col-span-1 "><div data-key="1978702965" data-name="WebComponent" class="pal-brand1 w-full h-full"><script src="https://www.shell.nl/_jcr_content/root/footer/inherited/web_component_749835800.stream/1742310571219/4c0634982019775eaba5aa5d8a6052b86ed82fca/topbar-button.js" type="module" crossorigin="anonymous" async=""></script><topbar-button label="Shell GO+ inloggen" href="https://www.my.shell.nl/" icon="https://www.shell.nl/_jcr_content/root/footer/inherited/web_component_749835800/links/item2.multi.stream/1718715122800/634fb00ca79dd066c624a367cab281094cf8d16e/person-solid.svg" class="w-full h-full"></topbar-button></div></div></div></div></footer></div></div></div></div></div></div>
+
+
+    
+  
+
+  
+
+</body></html>

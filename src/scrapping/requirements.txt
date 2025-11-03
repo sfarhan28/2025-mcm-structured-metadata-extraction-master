@@ -1,0 +1,8 @@
+scrapy==2.11.1
+scrapy-splash
+pymongo
+selenium
+beautifulsoup4
+torch
+transformers
+scikit-learn

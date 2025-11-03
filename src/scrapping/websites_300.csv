@@ -1,0 +1,294 @@
+url,category,country,region
+https://www.spiegel.de/,News,DE,EU Core
+https://www.bild.de/,News,DE,EU Core
+https://www.zeit.de/,News,DE,EU Core
+https://www.faz.net/,News,DE,EU Core
+https://www.sueddeutsche.de/,News,DE,EU Core
+https://www.amazon.de/,E-commerce,DE,EU Core
+https://www.otto.de/,E-commerce,DE,EU Core
+https://www.zalando.de/,E-commerce,DE,EU Core
+https://www.ebay.de/,E-commerce,DE,EU Core
+https://www.lidl.de/,E-commerce,DE,EU Core
+https://www.deutsche-bank.de/,Finance,DE,EU Core
+https://www.commerzbank.de/,Finance,DE,EU Core
+https://www.sparkasse.de/,Finance,DE,EU Core
+https://www.bmw.de/,Automotive,DE,EU Core
+https://www.mercedes-benz.de/,Automotive,DE,EU Core
+https://www.volkswagen.de/,Automotive,DE,EU Core
+https://www.audi.de/,Automotive,DE,EU Core
+https://www.bahn.de/,Travel,DE,EU Core
+https://www.lufthansa.com/de/de/homepage,Travel,DE,EU Core
+https://www.t-online.de/,Portal,DE,EU Core
+https://web.de/,Portal,DE,EU Core
+https://gmx.net/,Portal,DE,EU Core
+https://www.telekom.de/,Telecom,DE,EU Core
+https://www.vodafone.de/,Telecom,DE,EU Core
+https://www.o2online.de/,Telecom,DE,EU Core
+https://www.adidas.de/,Retail,DE,EU Core
+https://www.puma.de/,Retail,DE,EU Core
+https://www.bosch.de/,Industrial,DE,EU Core
+https://www.siemens.com/de/de.html,Industrial,DE,EU Core
+https://www.bayer.de/,Pharma,DE,EU Core
+https://www.sap.com/germany/index.html,Tech,DE,EU Core
+https://www.henkel.de/,Consumer Goods,DE,EU Core
+https://www.basf.com/de/,Chemicals,DE,EU Core
+https://www.allianz.de/,Insurance,DE,EU Core
+https://www.dkb.de/,Finance,DE,EU Core
+https://www.ing.de/,Finance,DE,EU Core
+https://www.check24.de/,Comparison,DE,EU Core
+https://www.immobilienscout24.de/,Real Estate,DE,EU Core
+https://www.stepstone.de/,Jobs,DE,EU Core
+https://www.xing.com/,Social,DE,EU Core
+https://www.bundesregierung.de/,Government,DE,EU Core
+https://www.destatis.de/,Government,DE,EU Core
+https://www.lemonde.fr/,News,FR,EU Core
+https://www.lefigaro.fr/,News,FR,EU Core
+https://www.liberation.fr/,News,FR,EU Core
+https://www.lequipe.fr/,News,FR,EU Core
+https://www.lesechos.fr/,News,FR,EU Core
+https://www.amazon.fr/,E-commerce,FR,EU Core
+https://www.fnac.com/,E-commerce,FR,EU Core
+https://www.cdiscount.com/,E-commerce,FR,EU Core
+https://www.carrefour.fr/,E-commerce,FR,EU Core
+https://www.auchan.fr/,E-commerce,FR,EU Core
+https://www.darty.com/,E-commerce,FR,EU Core
+https://www.leroymerlin.fr/,E-commerce,FR,EU Core
+https://www.vente-privee.com/,E-commerce,FR,EU Core
+https://www.bnpbaribas.fr/,Finance,FR,EU Core
+https://www.societegenerale.fr/,Finance,FR,EU Core
+https://www.credit-agricole.fr/,Finance,FR,EU Core
+https://www.labanquepostale.fr/,Finance,FR,EU Core
+https://www.renault.fr/,Automotive,FR,EU Core
+https://www.peugeot.fr/,Automotive,FR,EU Core
+https://www.citroen.fr/,Automotive,FR,EU Core
+https://www.sncf-connect.com/,Travel,FR,EU Core
+https://www.airfrance.fr/,Travel,FR,EU Core
+https://www.ratp.fr/,Travel,FR,EU Core
+https://www.orange.fr/,Telecom,FR,EU Core
+https://www.sfr.fr/,Telecom,FR,EU Core
+https://www.bouyguestelecom.fr/,Telecom,FR,EU Core
+https://www.free.fr/,Telecom,FR,EU Core
+https://www.lvmh.fr/,Luxury,FR,EU Core
+https://www.kering.com/,Luxury,FR,EU Core
+https://www.loreal.com/fr/,Consumer Goods,FR,EU Core
+https://www.danone.fr/,Consumer Goods,FR,EU Core
+https://www.michelin.fr/,Industrial,FR,EU Core
+https://www.totalenergies.fr/,Energy,FR,EU Core
+https://www.edf.fr/,Energy,FR,EU Core
+https://www.axa.fr/,Insurance,FR,EU Core
+https://www.pagesjaunes.fr/,Directory,FR,EU Core
+https://www.leboncoin.fr/,Classifieds,FR,EU Core
+https://www.doctolib.fr/,Health,FR,EU Core
+https://www.pole-emploi.fr/,Jobs,FR,EU Core
+https://www.service-public.fr/,Government,FR,EU Core
+https://www.gouvernement.fr/,Government,FR,EU Core
+https://www.caf.fr/,Government,FR,EU Core
+https://www.ameli.fr/,Government,FR,EU Core
+https://www.impots.gouv.fr/,Government,FR,EU Core
+https://www.bol.com/,E-commerce,NL,EU Core
+https://www.ah.nl/,E-commerce,NL,EU Core
+https://www.coolblue.nl/,E-commerce,NL,EU Core
+https://www.jumbo.com/,E-commerce,NL,EU Core
+https://www.wehkamp.nl/,E-commerce,NL,EU Core
+https://www.marktplaats.nl/,Classifieds,NL,EU Core
+https://www.telegraaf.nl/,News,NL,EU Core
+https://www.ad.nl/,News,NL,EU Core
+https://www.volkskrant.nl/,News,NL,EU Core
+https://www.nrc.nl/,News,NL,EU Core
+https://www.nu.nl/,News,NL,EU Core
+https://www.ing.nl/,Finance,NL,EU Core
+https://www.abnamro.nl/,Finance,NL,EU Core
+https://www.rabobank.nl/,Finance,NL,EU Core
+https://www.ns.nl/,Travel,NL,EU Core
+https://www.klm.com/,Travel,NL,EU Core
+https://www.transavia.com/,Travel,NL,EU Core
+https://www.kpn.com/,Telecom,NL,EU Core
+https://www.vodafone.nl/,Telecom,NL,EU Core
+https://www.t-mobile.nl/,Telecom,NL,EU Core
+https://www.ziggo.nl/,Telecom,NL,EU Core
+https://www.philips.nl/,Tech,NL,EU Core
+https://www.heineken.com/nl/,Consumer Goods,NL,EU Core
+https://www.unilever.nl/,Consumer Goods,NL,EU Core
+https://www.shell.nl/,Energy,NL,EU Core
+https://www.postnl.nl/,Logistics,NL,EU Core
+https://www.randstad.nl/,Jobs,NL,EU Core
+https://www.rijksoverheid.nl/,Government,NL,EU Core
+https://www.belastingdienst.nl/,Government,NL,EU Core
+https://www.svb.nl/,Government,NL,EU Core
+https://www.kvk.nl/,Government,NL,EU Core
+https://www.politie.nl/,Government,NL,EU Core
+https://www.tudelft.nl/,Education,NL,EU Core
+https://www.uva.nl/,Education,NL,EU Core
+https://www.uu.nl/,Education,NL,EU Core
+https://www.maastrichtuniversity.nl/,Education,NL,EU Core
+https://www.eur.nl/,Education,NL,EU Core
+https://www.thuisbezorgd.nl/,Services,NL,EU Core
+https://www. funda.nl/,Real Estate,NL,EU Core
+https://www.independer.nl/,Comparison,NL,EU Core
+https://www.anwb.nl/,Services,NL,EU Core
+https://tweakers.net/,Tech,NL,EU Core
+https://www.vpro.nl/,Media,NL,EU Core
+https://www.npo.nl/,Media,NL,EU Core
+https://www.irishtimes.com/,News,IE,EU Core
+https://www.independent.ie/,News,IE,EU Core
+https://www.breakingnews.ie/,News,IE,EU Core
+https://www.thejournal.ie/,News,IE,EU Core
+https://www.rte.ie/,News,IE,EU Core
+https://www.joe.ie/,Lifestyle,IE,EU Core
+https://www.her.ie/,Lifestyle,IE,EU Core
+https://www.rsvplive.ie/,Lifestyle,IE,EU Core
+https://www.eir.ie/,Telecom,IE,EU Core
+https://www.three.ie/,Telecom,IE,EU Core
+https://www.vodafone.ie/,Telecom,IE,EU Core
+https://www.aerlingus.com/,Travel,IE,EU Core
+https://www.ryanair.com/ie/en,Travel,IE,EU Core
+https://www.buseireann.ie/,Transport,IE,EU Core
+https://www.irishrail.ie/,Transport,IE,EU Core
+https://www.dublinbus.ie/,Transport,IE,EU Core
+https://www.luas.ie/,Transport,IE,EU Core
+https://www.revenue.ie/,Government,IE,EU Core
+https://www.gov.ie/,Government,IE,EU Core
+https://www.citizensinformation.ie/,Government,IE,EU Core
+https://www.hse.ie/,Government,IE,EU Core
+https://www.welfare.ie/,Government,IE,EU Core
+https://www.bonkers.ie/,Comparison,IE,EU Core
+https://www.bordgaisenergy.ie/,Energy,IE,EU Core
+https://www.electricireland.ie/,Energy,IE,EU Core
+https://www.bankofireland.com/,Finance,IE,EU Core
+https://www.aib.ie/,Finance,IE,EU Core
+https://www.permanenttsb.ie/,Finance,IE,EU Core
+https://www.creditunion.ie/,Finance,IE,EU Core
+https://www.dcu.ie/,Education,IE,EU Core
+https://www.tcd.ie/,Education,IE,EU Core
+https://www.ucd.ie/,Education,IE,EU Core
+https://www.supervalu.ie/,E-commerce,IE,EU Core
+https://www.tesco.ie/,E-commerce,IE,EU Core
+https://www.dunnesstores.com/,E-commerce,IE,EU Core
+https://www.lidl.ie/,E-commerce,IE,EU Core
+https://www.aldi.ie/,E-commerce,IE,EU Core
+https://www.harveynorman.ie/,E-commerce,IE,EU Core
+https://www.currys.ie/,E-commerce,IE,EU Core
+https://www.did.ie/,E-commerce,IE,EU Core
+https://www.amazon.ie/,E-commerce,IE,EU Core
+https://www.zalando.ie/,E-commerce,IE,EU Core
+https://deliveroo.ie/,Services,IE,EU Core
+https://www.aftonbladet.se/,News,SE,Nordic
+https://www.expressen.se/,News,SE,Nordic
+https://www.svd.se/,News,SE,Nordic
+https://www.dn.se/,News,SE,Nordic
+https://www.svt.se/,Media,SE,Nordic
+https://www.ikea.com/se/sv/,E-commerce,SE,Nordic
+https://www.hm.com/sv_se/index.html,E-commerce,SE,Nordic
+https://www.ica.se/,E-commerce,SE,Nordic
+https://www.blocket.se/,Classifieds,SE,Nordic
+https://www.swedbank.se/,Finance,SE,Nordic
+https://www.handelsbanken.se/,Finance,SE,Nordic
+https://www.seb.se/,Finance,SE,Nordic
+https://www.volvocars.com/se,Automotive,SE,Nordic
+https://www.ericsson.com/en,Tech,SE,Nordic
+https://www.spotify.com/se/,Music,SE,Nordic
+https://www.skatteverket.se/,Government,SE,Nordic
+https://www.regeringen.se/,Government,SE,Nordic
+https://www.saab.com/,Industrial,SE,Nordic
+https://www.vatenfall.se/,Energy,SE,Nordic
+https://www.sj.se/,Travel,SE,Nordic
+https://www.dr.dk/,News,DK,Nordic
+https://www.berlingske.dk/,News,DK,Nordic
+https://politiken.dk/,News,DK,Nordic
+https://jyllands-posten.dk/,News,DK,Nordic
+https://www.tv2.dk/,Media,DK,Nordic
+https://www.lego.com/da-dk,Toys,DK,Nordic
+https://www.maersk.com/,Logistics,DK,Nordic
+https://www.danskebank.dk/,Finance,DK,Nordic
+https://www.jysk.dk/,E-commerce,DK,Nordic
+https://www.bilka.dk/,E-commerce,DK,Nordic
+https://www.coop.dk/,E-commerce,DK,Nordic
+https://www.carlsberggroup.com/,Consumer Goods,DK,Nordic
+https://www.vestas.com/,Energy,DK,Nordic
+https://www.orsted.com/,Energy,DK,Nordic
+https://www.dsb.dk/,Travel,DK,Nordic
+https://www.skat.dk/,Government,DK,Nordic
+https://www.borger.dk/,Government,DK,Nordic
+https://www.ku.dk/,Education,DK,Nordic
+https://www.dtu.dk/,Education,DK,Nordic
+https://www.au.dk/,Education,DK,Nordic
+https://www.yle.fi/,News,FI,Nordic
+https://www.hs.fi/,News,FI,Nordic
+https://www.is.fi/,News,FI,Nordic
+https://www.mtvuutiset.fi/,Media,FI,Nordic
+https://www.nokia.com/,Tech,FI,Nordic
+https://www.k-ruoka.fi/,E-commerce,FI,Nordic
+https://www.s-kaupat.fi/,E-commerce,FI,Nordic
+https://www.verkkokauppa.com/,E-commerce,FI,Nordic
+https://www.tori.fi/,Classifieds,FI,Nordic
+https://www.op.fi/,Finance,FI,Nordic
+https://www.nordea.fi/,Finance,FI,Nordic
+https://www.kone.com/,Industrial,FI,Nordic
+https://www.neste.com/,Energy,FI,Nordic
+https://www.finnair.com/fi-en/,Travel,FI,Nordic
+https://www.vr.fi/,Travel,FI,Nordic
+https://www.vero.fi/,Government,FI,Nordic
+https://www.suomi.fi/,Government,FI,Nordic
+https://www.helsinki.fi/,Education,FI,Nordic
+https://www.aalto.fi/,Education,FI,Nordic
+https://www.tuni.fi/,Education,FI,Nordic
+https://www.repubblica.it/,News,IT,Southern Europe
+https://www.corriere.it/,News,IT,Southern Europe
+https://www.lastampa.it/,News,IT,Southern Europe
+https://www.gazzetta.it/,News,IT,Southern Europe
+https://www.rai.it/,Media,IT,Southern Europe
+https://www.amazon.it/,E-commerce,IT,Southern Europe
+https://www.subito.it/,Classifieds,IT,Southern Europe
+https://www.unicredit.it/,Finance,IT,Southern Europe
+https://www.intesasanpaolo.com/,Finance,IT,Southern Europe
+https://www.fiat.it/,Automotive,IT,Southern Europe
+https://www.ferrari.com/it-IT,Automotive,IT,Southern Europe
+https://www.trenitalia.com/,Travel,IT,Southern Europe
+https://www.eni.com/,Energy,IT,Southern Europe
+https://www.tim.it/,Telecom,IT,Southern Europe
+https://www.poste.it/,Services,IT,Southern Europe
+https://www.elpais.com/,News,ES,Southern Europe
+https://www.elmundo.es/,News,ES,Southern Europe
+https://www.abc.es/,News,ES,Southern Europe
+https://www.marca.com/,News,ES,Southern Europe
+https://www.rtve.es/,Media,ES,Southern Europe
+https://www.amazon.es/,E-commerce,ES,Southern Europe
+https://www.elcorteingles.es/,E-commerce,ES,Southern Europe
+https://www.zara.com/es/,E-commerce,ES,Southern Europe
+https://www.mercadona.es/,E-commerce,ES,Southern Europe
+https://www.santander.com/es/home,Finance,ES,Southern Europe
+https://www.bbva.es/,Finance,ES,Southern Europe
+https://www.caixabank.es/,Finance,ES,Southern Europe
+https://www.telefonica.com/es/,Telecom,ES,Southern Europe
+https://www.renfe.com/,Travel,ES,Southern Europe
+https://www.iberia.com/,Travel,ES,Southern Europe
+https://www.publico.pt/,News,PT,Southern Europe
+https://expresso.pt/,News,PT,Southern Europe
+https://www.sapo.pt/,Portal,PT,Southern Europe
+https://www.rtp.pt/,Media,PT,Southern Europe
+https://www.continente.pt/,E-commerce,PT,Southern Europe
+https://www.pingodoce.pt/,E-commerce,PT,Southern Europe
+https://www.worten.pt/,E-commerce,PT,Southern Europe
+https://www.olx.pt/,Classifieds,PT,Southern Europe
+https://www.cgd.pt/,Finance,PT,Southern Europe
+https://www.millenniumbcp.pt/,Finance,PT,Southern Europe
+https://www.tapairportugal.com/,Travel,PT,Southern Europe
+https://www.cp.pt/,Travel,PT,Southern Europe
+https://www.nos.pt/,Telecom,PT,Southern Europe
+https://www.meo.pt/,Telecom,PT,Southern Europe
+https://www.vodafone.pt/,Telecom,PT,Southern Europe
+https://www.onet.pl/,News,PL,Eastern Europe
+https://www.wp.pl/,News,PL,Eastern Europe
+https://www.allegro.pl/,E-commerce,PL,Eastern Europe
+https://www.olx.pl/,Classifieds,PL,Eastern Europe
+https://www.otomoto.pl/,Automotive,PL,Eastern Europe
+https://www.pkobp.pl/,Finance,PL,Eastern Europe
+https://www.lpp.com/en,Retail,PL,Eastern Europe
+https://www.gov.pl/,Government,PL,Eastern Europe
+https://www.seznam.cz/,Portal,CZ,Eastern Europe
+https://www.idnes.cz/,News,CZ,Eastern Europe
+https://www.alza.cz/,E-commerce,CZ,Eastern Europe
+https://www.mall.cz/,E-commerce,CZ,Eastern Europe
+https://www.skoda-auto.cz/,Automotive,CZ,Eastern Europe
+https://www.csas.cz/,Finance,CZ,Eastern Europe
+https://www.mvcr.cz/,Government,CZ,Eastern Europe

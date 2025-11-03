@@ -1,0 +1,159 @@
+<div id="ot-content" class="ot-main-content">
+   <!-- Logo Tag -->
+   <div class="pc-logo-container">
+      <div class="pc-logo" role="img" aria-label="Company Logo"><img alt="Company Logo" src="https://cdn.cookielaw.org/logos/static/ot_company_logo.png"></div>
+   </div>
+   <h2 id="pc-title">Cookie Settings</h2>
+   <div id="pc-policy-text">
+      <div class="pc-logo-button" id="ot-pc-logo-button" tabindex="-1"> 
+         <button class="disable-all-btn" tabindex="0"> Don’t enable </button> 
+         <button class="enable-all-btn" id="enable-recommended-btn-handler" tabindex="0"> Enable all </button> 
+         <button class="save-and-close pc-save-and-close save-preference-btn-handler onetrust-close-btn-handler" tabindex="0">Confirm my choices</button> 
+      </div>
+      <div class="ot-general" dir="auto">
+         <div class="ot-general-width">
+            <h3> General information </h3>
+            <ul aria-label="General Information" dir="auto">
+               <li id="ot-content-1-list">
+                  <button aria-controls="ot-content-1" aria-expanded="false" class="ot-general-question" id="ot-question-1" tabindex="0"> You are in control of your data. </button> 
+                  <div aria-hidden="true" class="ot-answer" id="ot-content-1">
+                     <p> You can control how Adobe websites use cookies and similar technologies by making choices below. But note that if you disable cookies and similar technologies entirely, Adobe websites may not function properly. </p>
+                  </div>
+               </li>
+               <li id="ot-content-2-list">
+                  <button aria-controls="ot-content-2" aria-expanded="false" class="ot-general-question" id="ot-question-2" tabindex="0"> What are cookies and why does Adobe use them? </button> 
+                  <div aria-hidden="true" class="ot-answer" id="ot-content-2">
+                     <p> Cookies are small text files stored by your web browser when you use websites. There are also other technologies that can be used for similar purposes like HTML5 Local Storage and local shared objects, web beacons, and embedded scripts. These technologies help us do things like remembering you and your preferences when you return to our sites, measure how you use the website, conduct market research, and gather information about the ads you see and interact with. </p>
+                  </div>
+               </li>
+               <li id="ot-content-3-list">
+                  <button aria-controls="ot-content-3" aria-expanded="false" class="ot-general-question" id="ot-question-3" tabindex="0"> How do I make choices? </button> 
+                  <div aria-hidden="true" class="ot-answer" id="ot-content-3">
+                     <p> You can make choices in the menu below about what cookies and other technologies you want us to use on Adobe sites when you visit them from this browser. You can always change those choices later by clicking on the Cookie Preferences link at the bottom of the page. </p>
+                  </div>
+               </li>
+            </ul>
+         </div>
+         <div style="clear:both"> 
+         </div>
+      </div>
+      <div class="ot-enable-disabled">
+         <div class="ot-enable">
+            <h3 class="ot-ed-title" dir="auto"> If enabled: </h3>
+            <ul dir="auto">
+               <li> We can improve your experience by tailoring the site and the content to things we think might be of interest </li>
+               <li> We can better keep track of your preferences — like what language you prefer to use </li>
+               <li> We will better understand your likely interests so we can provide you more relevant Adobe ads and content on non-Adobe websites and in non-Adobe apps </li>
+               <li> It will help us improve the performance of our website and those of our partners who use the Adobe Experience Cloud </li>
+            </ul>
+         </div>
+         <div class="ot-disable">
+            <h3 class="ot-ed-title" dir="auto"> If disabled: </h3>
+            <ul dir="auto">
+               <li> We won’t be able to remember you from session to session so the experience may not be tailored to your interests </li>
+               <li> You’ll still have access to the content of the site but certain features that depend on cookies may not function </li>
+               <li> You’ll still see ads, they just may not be as relevant to you </li>
+            </ul>
+         </div>
+         <div style="clear:both"> 
+         </div>
+      </div>
+      <style nouce="Cv/S3XyRTpSP6FpPsDB87g==">
+         .ot-cookie-settings .cs-text::before {
+         content: "We’ve saved your settings"
+         }
+         .ot-cookie-settings .cs-settings-text::before {
+         content: "Manage Cookie Settings"
+         }
+         .always-active::after {
+         content: "First party cookies always active when the category is enabled"
+         }
+         #onetrust-pc-sdk #select-all-container::before {
+         /* FOR WEBKIT */
+         content: "Host"
+         }
+         #onetrust-pc-sdk #select-all-container::after {
+         /* FOR WEBKIT */
+         content: "Description"
+         }
+         #onetrust-pc-sdk.ot-sdk-not-webkit #select-all-container::before {
+         content: "Host"
+         }
+         #onetrust-pc-sdk.ot-sdk-not-webkit #select-all-container::after {
+         content: "Description"
+         }
+         #onetrust-pc-sdk .accordion-text .ot-switch::before {
+         content: "Enable"
+         }
+         #onetrust-pc-sdk .accordion-text .ot-switch {
+         direction:ltr;
+         }
+         #onetrust-pc-sdk .accordion-text .ot-switch.checked::before {
+         content: "Enabled"
+         }
+         #onetrust-pc-sdk #vendor-list-content [type="checkbox"]:disabled + label::before {
+         content: "Always active"
+         }
+         #vendors-list.strictly .always-active::after {
+         content: "Always active"
+         }
+      </style>
+   </div>
+   <div id="accept-recommended-container" class="ot-sdk-row">
+      <div class="ot-sdk-column"><button id="accept-recommended-btn-handler" class="button-theme" style="display: inline-block;" tabindex="0">Enable all</button></div>
+   </div>
+   <section id="cookie-preferences" class="ot-sdk-row category-group">
+      <h3 id="manage-cookies-text" aria-hidden="true"></h3>
+      <div class="accordion-text category-item ot-always-active-group" data-optanongroupid="C0001">
+         <!-- Group name -->
+         <h4 class="category-header" id="ot-header-id-C0001">Operate the site and core services</h4>
+         <div id="ot-status-id-C0001" class="ot-always-active">Always active</div>
+         <!-- Group toggle -->
+         <div class="ot-switch ot-toggle ot-hide-tgl"><input type="checkbox" name="ot-group-id-C0001" class="switch-checkbox category-switch-handler" id="ot-group-id-C0001" aria-checked="false" role="switch" aria-controls="ot-desc-id-C0001" aria-labelledby="ot-header-id-C0001" aria-hidden="true" data-optanongroupid="C0001" checked="" tabindex="0"> <label class="ot-switch-label" for="ot-group-id-C0001"><span class="ot-switch-inner"></span> <span class="ot-switch-nob"></span> <span class="label-text">Operate the site and core services</span></label></div>
+         <!-- Group description -->
+         <p class="ot-category-desc" id="ot-desc-id-C0001">
+         <div class="ot-cookie-description cookie-description" dir="auto">These cookies are required, and they are used to enable the site and related services core functionality. Without them the site could not operate, so they cannot be disabled.</div>
+         </p><!-- sub groups --><!-- view vendors link --><!-- View host link -->
+         <div class="category-host-list-container"><button class="ot-link-btn category-host-list-btn category-host-list-handler" aria-label="Cookie Details button opens Cookie List menu" data-parent-id="C0001">Cookie details&lrm;</button></div>
+      </div>
+      <div class="accordion-text category-item" data-optanongroupid="C0002">
+         <!-- Group name -->
+         <h4 class="category-header" id="ot-header-id-C0002">Measure performance</h4>
+         <!-- Group toggle -->
+         <div class="ot-switch ot-toggle"><input type="checkbox" name="ot-group-id-C0002" class="switch-checkbox category-switch-handler" id="ot-group-id-C0002" aria-checked="false" role="switch" aria-controls="ot-desc-id-C0002" aria-labelledby="ot-header-id-C0002" data-optanongroupid="C0002" tabindex="0"> <label class="ot-switch-label" for="ot-group-id-C0002"><span class="ot-switch-inner"></span> <span class="ot-switch-nob"></span> <span class="label-text">Measure performance</span></label></div>
+         <!-- Group description -->
+         <p class="ot-category-desc" id="ot-desc-id-C0002">
+         <div class="ot-cookie-description cookie-description" dir="auto">These cookies are used to analyze site usage to measure and improve performance. Without them Adobe cannot know what content is most valued and how often unique visitors return to the site, making it hard to improve information we offer to you.</div>
+         </p><!-- sub groups --><!-- view vendors link --><!-- View host link -->
+         <div class="category-host-list-container"><button class="ot-link-btn category-host-list-btn category-host-list-handler" aria-label="Cookie Details button opens Cookie List menu" data-parent-id="C0002">Cookie details&lrm;</button></div>
+      </div>
+      <div class="accordion-text category-item" data-optanongroupid="C0003">
+         <!-- Group name -->
+         <h4 class="category-header" id="ot-header-id-C0003">Extend functionality</h4>
+         <!-- Group toggle -->
+         <div class="ot-switch ot-toggle"><input type="checkbox" name="ot-group-id-C0003" class="switch-checkbox category-switch-handler" id="ot-group-id-C0003" aria-checked="false" role="switch" aria-controls="ot-desc-id-C0003" aria-labelledby="ot-header-id-C0003" data-optanongroupid="C0003" tabindex="0"> <label class="ot-switch-label" for="ot-group-id-C0003"><span class="ot-switch-inner"></span> <span class="ot-switch-nob"></span> <span class="label-text">Extend functionality</span></label></div>
+         <!-- Group description -->
+         <p class="ot-category-desc" id="ot-desc-id-C0003">
+         <div class="ot-cookie-description cookie-description" dir="auto">These cookies are used to enhance the functionality of Adobe sites such as remembering your settings and preferences to deliver a personalized experience; for example, your username, your repeated visits, preferred language, your country, or any other saved preference.</div>
+         </p><!-- sub groups --><!-- view vendors link --><!-- View host link -->
+         <div class="category-host-list-container"><button class="ot-link-btn category-host-list-btn category-host-list-handler" aria-label="Cookie Details button opens Cookie List menu" data-parent-id="C0003">Cookie details&lrm;</button></div>
+      </div>
+      <div class="accordion-text category-item" data-optanongroupid="C0004">
+         <!-- Group name -->
+         <h4 class="category-header" id="ot-header-id-C0004">Personalize advertising</h4>
+         <!-- Group toggle -->
+         <div class="ot-switch ot-toggle"><input type="checkbox" name="ot-group-id-C0004" class="switch-checkbox category-switch-handler" id="ot-group-id-C0004" aria-checked="false" role="switch" aria-controls="ot-desc-id-C0004" aria-labelledby="ot-header-id-C0004" data-optanongroupid="C0004" tabindex="0"> <label class="ot-switch-label" for="ot-group-id-C0004"><span class="ot-switch-inner"></span> <span class="ot-switch-nob"></span> <span class="label-text">Personalize advertising</span></label></div>
+         <!-- Group description -->
+         <p class="ot-category-desc" id="ot-desc-id-C0004">
+         <div class="ot-cookie-description cookie-description" dir="auto">These cookies are used to enable Adobe and our partners to serve ads more relevant to your interests. Without them you will still see ads, but they might not be as relevant to you. </div>
+         </p><!-- sub groups --><!-- view vendors link --><!-- View host link -->
+         <div class="category-host-list-container"><button class="ot-link-btn category-host-list-btn category-host-list-handler" aria-label="Cookie Details button opens Cookie List menu" data-parent-id="C0004">Cookie details&lrm;</button></div>
+      </div>
+      <!-- Groups sections starts --><!-- Group section ends --><!-- Accordion Group section starts --><!-- Accordion Group section ends --><!-- Footer section starts -->
+      <div class="save-preference-btn-container">
+         <button class="save-preference-btn-handler onetrust-close-btn-handler button-theme" tabindex="0">Confirm my choices</button>
+         <div class="ot-pc-footer-logo"><a class="powered-by-logo" href="https://www.onetrust.com/products/cookie-consent/" target="_blank" rel="noopener noreferrer" aria-label="Powered by OneTrust Opens in a new Tab" tabindex="0"><img alt="Powered by Onetrust" src="https://cdn.cookielaw.org/logos/static/powered_by_logo.svg" title="Powered by OneTrust Opens in a new Tab"></a></div>
+      </div>
+      <!-- Footer section ends -->
+   </section>
+</div>

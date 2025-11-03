@@ -1,0 +1,59 @@
+url,timestamp,status,error_log,cmp_vendor
+https://eu.puma.com/ie/en/home,2025-06-15T20:24:12.818624,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.adobe.com/ie/,2025-06-15T20:24:16.382777,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www2.hm.com/en_ie/index.html,2025-06-15T20:24:19.155647,Failed,['OneTrust handler failed: TimeoutException'],OneTrust
+https://www.rte.ie/,2025-06-15T20:24:33.516685,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.did.ie/,2025-06-15T20:24:38.112946,Failed,['No known CMP detected; generic handler needs implementation.'],Unknown/Generic
+https://www.amazon.ie/,2025-06-15T20:24:40.549831,Failed,['No known CMP detected; generic handler needs implementation.'],Unknown/Generic
+https://www.zalando.ie/,2025-06-15T20:24:43.719663,Failed,['No known CMP detected; generic handler needs implementation.'],Unknown/Generic
+https://deliveroo.ie/,2025-06-15T20:24:46.706517,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.irishtimes.com/,2025-06-15T20:24:50.588959,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.independent.ie/,2025-06-15T20:24:54.349121,Failed,['No known CMP detected; generic handler needs implementation.'],Unknown/Generic
+https://www.breakingnews.ie/,2025-06-15T20:24:58.112171,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.joe.ie/,2025-06-15T20:25:00.955589,Failed,['No known CMP detected; generic handler needs implementation.'],Unknown/Generic
+https://www.her.ie/,2025-06-15T20:25:04.281769,Failed,['No known CMP detected; generic handler needs implementation.'],Unknown/Generic
+https://www.thejournal.ie/,2025-06-15T20:25:22.415872,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.rsvplive.ie/,2025-06-15T20:25:26.202834,Failed,['No known CMP detected; generic handler needs implementation.'],Unknown/Generic
+https://www.eir.ie/,2025-06-15T20:25:30.380895,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.aerlingus.com/,2025-06-15T20:25:41.973675,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.ryanair.com/ie/en,2025-06-15T20:25:44.925200,Failed,['No known CMP detected; generic handler needs implementation.'],Unknown/Generic
+https://www.buseireann.ie/,2025-06-15T20:25:48.055299,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.irishrail.ie/,2025-06-15T20:25:50.702914,Failed,['No known CMP detected; generic handler needs implementation.'],Unknown/Generic
+https://www.dublinbus.ie/,2025-06-15T20:25:54.661975,Failed,['No known CMP detected; generic handler needs implementation.'],Unknown/Generic
+https://www.luas.ie/,2025-06-15T20:25:57.618100,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.revenue.ie/,2025-06-15T20:26:01.915929,Failed,['No known CMP detected; generic handler needs implementation.'],Unknown/Generic
+https://www.gov.ie/,2025-06-15T20:26:04.539186,Failed,['No known CMP detected; generic handler needs implementation.'],Unknown/Generic
+https://www.citizensinformation.ie/,2025-06-15T20:26:06.929316,Failed,['No known CMP detected; generic handler needs implementation.'],Unknown/Generic
+https://www.hse.ie/,2025-06-15T20:26:09.662919,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.bonkers.ie/,2025-06-15T20:26:12.246556,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.bordgaisenergy.ie/,2025-06-15T20:26:15.503563,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.electricireland.ie/,2025-06-15T20:26:18.812488,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.bankofireland.com/,2025-06-15T20:26:22.593215,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.aib.ie/,2025-06-15T20:26:25.796394,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.permanenttsb.ie/,2025-06-15T20:26:33.586858,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.ulsterbank.ie/,2025-06-15T20:26:40.965507,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.creditunion.ie/,2025-06-15T20:26:44.322859,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.dcu.ie/,2025-06-15T20:26:47.179770,Failed,['No known CMP detected; generic handler needs implementation.'],Unknown/Generic
+https://www.tcd.ie/,2025-06-15T20:26:51.068129,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.ucc.ie/,2025-06-15T20:26:56.482448,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.nuigalway.ie/,2025-06-15T20:27:00.442065,Failed,['No known CMP detected; generic handler needs implementation.'],Unknown/Generic
+https://www.ul.ie/,2025-06-15T20:27:03.608403,Failed,['No known CMP detected; generic handler needs implementation.'],Unknown/Generic
+https://www.maynoothuniversity.ie/,2025-06-15T20:27:06.398367,Failed,['No known CMP detected; generic handler needs implementation.'],Unknown/Generic
+https://www.tudublin.ie/,2025-06-15T20:27:10.677552,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.supervalu.ie/,2025-06-15T20:27:13.601670,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.tesco.ie/,2025-06-15T20:27:16.340450,Failed,['No known CMP detected; generic handler needs implementation.'],Unknown/Generic
+https://www.lidl.ie/,2025-06-15T20:27:19.939008,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.aldi.ie/,2025-06-15T20:27:29.833383,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.dunnesstores.com/,2025-06-15T20:27:32.452451,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.brownthomas.com/,2025-06-15T20:27:36.058127,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.arnotts.ie/,2025-06-15T20:27:45.695346,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.elverys.ie/,2025-06-15T20:27:49.964844,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.lifestylesports.com/ie/,2025-06-15T20:27:54.840417,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.musgrave.ie/,2025-06-15T20:27:58.264056,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.carphonewarehouse.ie/,2025-06-15T20:28:02.970933,Failed,['Critical error in main workflow: WebDriverException'],
+https://www.currys.ie/,2025-06-15T20:28:45.197869,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.harveynorman.ie/,2025-06-15T20:29:04.304421,Failed,"['OneTrust host found, but Shadow DOM inaccessible.']",OneTrust
+https://www.donegalcoco.ie/,2025-06-15T20:29:09.197431,Failed,['No known CMP detected; generic handler needs implementation.'],Unknown/Generic
+https://www.corkcity.ie/,2025-06-15T20:29:14.493325,Failed,['No known CMP detected; generic handler needs implementation.'],Unknown/Generic
+https://www.welfare.ie/,2025-06-15T20:29:21.741655,Failed,['No known CMP detected; generic handler needs implementation.'],Unknown/Generic
+https://www.spunout.ie/,2025-06-15T20:29:24.751641,Failed,['No known CMP detected; generic handler needs implementation.'],Unknown/Generic

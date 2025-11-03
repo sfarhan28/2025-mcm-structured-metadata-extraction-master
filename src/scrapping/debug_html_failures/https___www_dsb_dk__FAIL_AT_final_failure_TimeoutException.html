@@ -1,0 +1,106 @@
+<html lang="da"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nødside - DSB</title>
+<style>
+    body {
+        font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+        background: #e9edeb
+    }
+
+    h1 {
+        font-size: 1.6rem
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        padding: 0;
+        text-align: inherit;
+        font: inherit;
+        border-radius: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        cursor: pointer
+    }
+
+    .error-msg-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 920px;
+        margin: auto;
+        gap: 1rem;
+        padding: 1rem
+    }
+
+    .error-msg-content {
+        flex: 1
+    }
+
+    .error p {
+        font-size: 1.2rem
+    }
+
+    .err-img-container {
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .err-tel {
+        text-decoration: none;
+        font-weight: 700;
+        color: #000
+    }
+
+    header {
+        display: flex;
+        max-width: 920px;
+        margin: auto;
+        justify-content: end
+    }
+
+    header img {
+        width: 46px
+    }
+</style>
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="content-security-policy" content="default-src 'none'; font-src 'self' data:; img-src 'self' data:; style-src 'unsafe-inline'; media-src 'self' data:; script-src 'unsafe-inline' data:; object-src 'self' data:; frame-src 'self' data:;">
+</head>
+
+<body>
+    <header><img src="data:image/png;base64,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" alt=""></header>
+    <section class="error-msg-wrapper">
+        <div class="error-msg-content" id="err-container" style="display:block">
+            <article class="error">
+                <h1>Hjemmesiden er midlertidigt utilgængeligt</h1>
+                <p>Det er derfor ikke muligt at købe billet her på siden i øjeblikket. Du kan forsøge at købe billet i
+                    DSB
+                    appen, i automaterne, eller checke ind med dit rejsekort.</p>
+                <p>Følg altid personalets anvisninger. Vi arbejder på at løse problemet og håber på forståelse.</p>
+                <p>På rejseplanen.dk kan du se alle afgange for tog, bus og metro.</p>
+                <p>Har du spørgsmål kan du kontakte vores kundeservice på <a class="err-tel" href="tel:+45 70 13 14 15">70
+                        13 14
+                        15</a>.</p>
+            </article>
+
+            <article class="error" id="msg-en" style="display:block">
+                <h1>The website is temporarily unavailable</h1>
+                <p>It is therefore not possible to buy a ticket on this page at the moment. You can try to buy a ticket
+                    in the
+                    DSB app, in the machines, or check in with your travel card.</p>
+                <p>Always follow the staff's instructions. We are working to resolve the issue and hope for your
+                    understanding.
+                </p>
+                <p>At rejseplanen.dk you can see all departures for train, bus and metro.</p>
+                <p>If you have any questions, you can contact our customer service on <a class="err-tel" href="tel:+45 70 13 14 15">70 13 14 15</a>.</p>
+            </article>
+        </div>
+        <div class="error-msg-content" id="err-container-oidc" style="display:none">
+
+
+        </div>
+        <div class="err-img-container">
+            
+        </div>
+    </section></body></html>

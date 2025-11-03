@@ -1,0 +1,59 @@
+url,status,purposes,errors
+https://eu.puma.com/ie/en/home,Failed,[],No settings button found; No banner found
+https://www.adobe.com/ie/,Failed,[],No settings button found; No banner found
+https://www2.hm.com/en_ie/index.html,Failed,[],No banner found
+https://www.rte.ie/,Failed,[],No banner found
+https://www.did.ie/,Failed,[],Critical error: TimeoutException
+https://www.amazon.ie/,Failed,[],No settings button found; No banner found
+https://www.zalando.ie/,Failed,[],No settings button found; No banner found
+https://deliveroo.ie/,Success,"[{""title"": ""Strictly Necessary Cookies"", ""is_strictly_necessary"": false, ""is_ticked_by_default"": false}]",
+https://www.irishtimes.com/,Failed,[],No banner found
+https://www.independent.ie/,No purposes found,[],
+https://www.breakingnews.ie/,Failed,[],No banner found
+https://www.joe.ie/,Failed,[],Critical error: TimeoutException
+https://www.her.ie/,Failed,[],Critical error: TimeoutException
+https://www.thejournal.ie/,Success,"[{""title"": ""Necessary Cookies"", ""is_strictly_necessary"": false, ""is_ticked_by_default"": false}]",
+https://www.rsvplive.ie/,Failed,[],Critical error: TimeoutException
+https://www.eir.ie/,Failed,[],No settings button found; No banner found
+https://www.aerlingus.com/,Failed,[],No settings button found; No settings button found; No banner found
+https://www.ryanair.com/ie/en,Failed,[],No banner found
+https://www.buseireann.ie/,Failed,[],No settings button found; No banner found
+https://www.irishrail.ie/,Failed,[],No settings button found; No banner found
+https://www.dublinbus.ie/,Failed,[],No settings button found; No banner found
+https://www.luas.ie/,Success,"[{""title"": ""Strictly Necessary Cookies"", ""is_strictly_necessary"": false, ""is_ticked_by_default"": false}]",
+https://www.revenue.ie/,Failed,[],No banner found
+https://www.gov.ie/,Failed,[],No settings button found; No banner found
+https://www.citizensinformation.ie/,Failed,[],No settings button found; No banner found
+https://www.hse.ie/,Failed,[],No settings button found; No banner found
+https://www.bonkers.ie/,Failed,[],No banner found
+https://www.bordgaisenergy.ie/,Success,"[{""title"": ""Strictly Necessary Cookies"", ""is_strictly_necessary"": false, ""is_ticked_by_default"": true}]",
+https://www.electricireland.ie/,Failed,[],No settings button found; No banner found
+https://www.bankofireland.com/,Failed,[],No settings button found; No banner found
+https://www.aib.ie/,Success,"[{""title"": ""Strictly Necessary Cookies"", ""is_strictly_necessary"": false, ""is_ticked_by_default"": false}]",
+https://www.permanenttsb.ie/,Failed,[],No banner found
+https://www.ulsterbank.ie/,Failed,[],No banner found
+https://www.creditunion.ie/,Failed,[],No banner found
+https://www.dcu.ie/,Failed,[],No settings button found; No banner found
+https://www.tcd.ie/,Failed,[],No settings button found; No banner found
+https://www.ucc.ie/,Failed,[],No banner found
+https://www.nuigalway.ie/,Failed,[],No banner found
+https://www.ul.ie/,Failed,[],No settings button found; No banner found
+https://www.maynoothuniversity.ie/,Failed,[],No settings button found; No banner found
+https://www.tudublin.ie/,Failed,[],No settings button found; No banner found
+https://www.supervalu.ie/,Failed,[],No settings button found; No banner found
+https://www.tesco.ie/,Failed,[],No banner found
+https://www.lidl.ie/,Success,"[{""title"": ""Necessary"", ""is_strictly_necessary"": false, ""is_ticked_by_default"": false}]",
+https://www.aldi.ie/,Success,"[{""title"": ""Strictly Necessary Cookies"", ""is_strictly_necessary"": false, ""is_ticked_by_default"": false}]",
+https://www.dunnesstores.com/,Failed,[],No settings button found; No banner found
+https://www.brownthomas.com/,Failed,[],No settings button found; No banner found
+https://www.arnotts.ie/,Failed,[],No settings button found; No banner found
+https://www.elverys.ie/,Failed,[],No settings button found; No settings button found; No banner found
+https://www.lifestylesports.com/ie/,Failed,[],No settings button found; No banner found
+https://www.musgrave.ie/,Failed,[],No settings button found; No banner found
+https://www.carphonewarehouse.ie/,Failed,[],Critical error: WebDriverException
+https://www.currys.ie/,Failed,[],No settings button found; No banner found
+https://www.harveynorman.ie/,Failed,[],No settings button found; No banner found
+https://www.donegalcoco.ie/,Failed,[],No settings button found; No banner found
+https://www.corkcity.ie/,Failed,[],No settings button found; Critical error: TimeoutException
+https://www.welfare.ie/,Failed,[],No settings button found; No banner found
+https://www.spunout.ie/,Failed,[],No settings button found; No banner found

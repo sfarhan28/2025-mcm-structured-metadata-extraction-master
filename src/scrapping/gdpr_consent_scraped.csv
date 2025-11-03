@@ -1,0 +1,90 @@
+url,initial_banner_found,settings_button_present,settings_button_text,error_log
+https://eu.puma.com/ie/en/home,True,False,,
+https://www.adobe.com/ie/,False,False,,
+https://www2.hm.com/en_ie/index.html,False,False,,
+https://www.rte.ie/,True,False,,
+https://www.did.ie/,True,True,; Show details,
+https://www.amazon.ie/,True,True,Customise,
+https://www.zalando.ie/,False,False,,
+https://deliveroo.ie/,True,True,Customise,
+https://www.irishtimes.com/,True,True,Cookie Settings,
+https://www.independent.ie/,True,False,,
+https://www.breakingnews.ie/,True,True,Privacy Settings,
+https://www.joe.ie/,True,False,,
+https://www.her.ie/,True,False,,
+https://www.thejournal.ie/,True,False,,
+https://www.rsvplive.ie/,True,False,,
+https://www.eir.ie/,True,False,,
+https://www.aerlingus.com/,True,False,,
+https://www.ryanair.com/ie/en,True,True,View cookie settings,
+https://www.buseireann.ie/,True,False,,
+https://www.irishrail.ie/,True,True,,
+https://www.dublinbus.ie/,False,False,,
+https://www.luas.ie/,True,True,Manage preferences,
+https://www.revenue.ie/,True,False,,
+https://www.gov.ie/,True,True,Manage preferences,
+https://www.citizensinformation.ie/,False,False,,
+https://www.hse.ie/,True,True,Cookie settings,
+https://www.bonkers.ie/,True,True,MANAGE MY COOKIE SETTINGS,
+https://www.bordgaisenergy.ie/,True,True,Cookie settings; Manage My Preferences,
+https://www.electricireland.ie/,True,True,Cookie settings; Cookie Settings,
+https://www.bankofireland.com/,True,True,Manage Cookie Settings,
+https://www.aib.ie/,True,False,,
+https://www.permanenttsb.ie/,True,True,Manage Preferences,
+https://www.ulsterbank.ie/,True,True,Manage Preferences,
+https://www.creditunion.ie/,True,True,Cookie Settings,
+https://www.dcu.ie/,True,True,; Show details,
+https://www.tcd.ie/,True,False,,
+https://www.ucc.ie/,True,False,,
+https://www.nuigalway.ie/,True,False,,
+https://www.ul.ie/,True,True,; Show details,
+https://www.maynoothuniversity.ie/,True,False,,
+https://www.tudublin.ie/,True,False,,
+https://www.supervalu.ie/,True,True,Cookie Settings,
+https://www.tesco.ie/,False,False,,
+https://www.lidl.ie/,True,True,CUSTOMISE,
+https://www.aldi.ie/,True,False,,
+https://www.dunnesstores.com/,True,False,,
+https://www.brownthomas.com/,True,False,,
+https://www.arnotts.ie/,True,False,,
+https://www.elverys.ie/,False,False,,"HTTPConnectionPool(host='localhost', port=63566): Read timed out. (read timeout=120)"
+https://www.lifestylesports.com/ie/,True,False,,
+https://www.musgrave.ie/,True,True,Cookie Settings,
+https://www.carphonewarehouse.ie/,False,False,,"Message: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome=137.0.7151.104)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff60b5ffe75+79173]
+	GetHandleVerifier [0x0x7ff60b5ffed0+79264]
+	(No symbol) [0x0x7ff60b3b9e5a]
+	(No symbol) [0x0x7ff60b3b6874]
+	(No symbol) [0x0x7ff60b3a7589]
+	(No symbol) [0x0x7ff60b3a9331]
+	(No symbol) [0x0x7ff60b3a78a6]
+	(No symbol) [0x0x7ff60b3a7306]
+	(No symbol) [0x0x7ff60b3a6fca]
+	(No symbol) [0x0x7ff60b3a4b9f]
+	(No symbol) [0x0x7ff60b3a541c]
+	(No symbol) [0x0x7ff60b3bde0a]
+	(No symbol) [0x0x7ff60b461dfe]
+	(No symbol) [0x0x7ff60b43896a]
+	(No symbol) [0x0x7ff60b46100d]
+	(No symbol) [0x0x7ff60b438743]
+	(No symbol) [0x0x7ff60b4014c1]
+	(No symbol) [0x0x7ff60b402253]
+	GetHandleVerifier [0x0x7ff60b8ca2ad+3004797]
+	GetHandleVerifier [0x0x7ff60b8c46fd+2981325]
+	GetHandleVerifier [0x0x7ff60b8e3350+3107360]
+	GetHandleVerifier [0x0x7ff60b61a9fe+188622]
+	GetHandleVerifier [0x0x7ff60b62228f+219487]
+	GetHandleVerifier [0x0x7ff60b608dc4+115860]
+	GetHandleVerifier [0x0x7ff60b608f79+116297]
+	GetHandleVerifier [0x0x7ff60b5ef528+11256]
+	BaseThreadInitThunk [0x0x7ffa7b0be8d7+23]
+	RtlUserThreadStart [0x0x7ffa7b45c34c+44]
+"
+https://www.currys.ie/,True,False,,
+https://www.harveynorman.ie/,True,False,,
+https://www.donegalcoco.ie/,True,True,; Show details,
+https://www.corkcity.ie/,True,True,; Show details,
+https://www.welfare.ie/,True,True,Manage preferences,
+https://www.spunout.ie/,True,True,; ,
