@@ -1,0 +1,5 @@
+# Large model files
+src/model/best_model.pth
+src/model/final_model.pth
+src/model/final_multi_label_model.pth
+src/gdpr_compliance_model/model.safetensors
