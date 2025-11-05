@@ -1,6 +1,6 @@
 # Automated Assessment of Cookie Consent Dialogues for GDPR Compliance
 
-This project presents an end-to-end system for automatically assessing the GDPR compliance of website cookie consent banners. It combines web scraping, Natural Language Processing (NLP), and structural analysis to detect dark patterns and evaluate banners against GDPR requirements. The project culminates in a Streamlit web application that provides real-time compliance analysis for any given URL.
+This academic project(MSc Computing) presents an end-to-end system for automatically assessing the GDPR compliance of website cookie consent banners. It combines web scraping, Natural Language Processing (NLP), and structural analysis to detect dark patterns and evaluate banners against GDPR requirements. The project culminates in a Streamlit web application that provides real-time compliance analysis for any given URL.
 
 ## 1. Project Overview
 
